@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 *{
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -165,7 +165,7 @@ footer {
     background-color: #2e3133;
     min-height: 265px;
 }
-=======
+
 
 #navigation {
     width: 200px;
@@ -209,4 +209,4 @@ body {
 footer {
     background-color: rgba(122, 228, 15, 0.781);
 }
->>>>>>> c92005e5a22019c0e82ecea1a632652b5013a42f
+
