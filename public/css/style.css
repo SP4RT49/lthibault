@@ -126,6 +126,7 @@ header .wrapper nav a{
     text-shadow: rgb(0, 0, 0) 1px 0px 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
+    text-align: center;
 }
 
 .icolor{
@@ -339,6 +340,22 @@ footer {
 
 @media (max-width: 992px){
 
+    /*------------    THIBAULT LETOURNEUR    -------------- */
+
+    #infos h1 {
+
+    }
+
+    .infobox {
+        width: 90%;
+
+    }
+
+    /*------------  -------------- */
+
+
+    /*------------    PRESTATIONS    -------------- */
+
     .infsup_cont .cont_elem{
         width: 100%;
         flex-direction: column;
@@ -351,9 +368,30 @@ footer {
         width: 400px;
         padding: 0 0 0 0;
     }
+    
+    /*------------  -------------- */
+
+
+
 }
 
 @media (max-width: 768px){
+
+    /*------------    THIBAULT LETOURNEUR    -------------- */
+
+    #infos h1 {
+        font-size: 200%;
+
+    }
+    
+    .infobox {
+            width: 90%;
+    
+    }
+    
+    /*------------  -------------- */
+
+    /*------------    PRESTATIONS    -------------- */
 
     .infsup_cont .card {
         background: none;
@@ -388,5 +426,8 @@ footer {
         position: relative;
         width: 100%;
     }
+
+    /*------------  -------------- */
+
 
 }
