@@ -76,7 +76,7 @@ header .wrapper nav a{
     width: 100%;
     height: calc(70vh - 100px);
     vertical-align: middle;
-    background-image: url(/public/img/prog-css.jpg);
+    background-image: url(../img/prog-css.jpg);
     background-position: 50%;
     background-size: cover;
 }
@@ -106,9 +106,9 @@ header .wrapper nav a{
 }
 
 #infos p{
-    color: white;
-    text-shadow: black 1px 2px 7px;
-    background: rgb(0, 0, 0) ;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    text-shadow: rgb(0, 0, 0) 1px 2px 7px;
 }
 
 
