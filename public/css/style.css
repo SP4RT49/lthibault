@@ -17,8 +17,8 @@ header {
     display: flex;
     justify-content: center;
     width: 100%;
-    background: #ffffff;
-    box-shadow: 0 2px 10px rgba(109,122,139,.1);
+    background: #F0DFD6;
+    box-shadow: 0 7px 10px rgba(109, 122, 139, 0.192);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transition-duration: .3s;
@@ -79,27 +79,9 @@ header .wrapper nav a{
     box-shadow: rgb(114, 114, 114) 0px 0px 5px 0px;
     background-color: rgba(29, 29, 29, 0.274);
     transition: 0.9s ease-in-out;
+    border-radius: 5px;
 
 }
-
-.infobox {
-    animation: pulse-red 2s infinite;
-}
-
-@keyframes pulse-red {
-    0% {
-        box-shadow: 0 0 0 0 rgba(150, 150, 150, 0.7);
-    }
-    
-    70% {
-        box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
-    }
-    
-    100% {
-        box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
-    }
-}
-
 
 #infos {
     display: flex;
@@ -165,6 +147,24 @@ header .wrapper nav a{
     color: #db7b0c;    
 }
 
+.infobox {
+    animation: pulse-red 2s infinite;
+}
+
+@keyframes pulse-red {
+    0% {
+        box-shadow: 0 0 0 0 rgba(150, 150, 150, 0.7);
+    }
+    
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
+    }
+    
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+    }
+}
+
 
 /* SECTION INFOS SUP */
 
@@ -173,7 +173,8 @@ header .wrapper nav a{
     flex-direction: column;
     align-items: center;
     padding: 64px 24px 72px;
-    background: rgb(43, 43, 43);
+    background: #F0DFD6;
+    box-shadow: black 0px 0px 50px 0px;
 }
 
 #infos-end {
@@ -201,9 +202,21 @@ header .wrapper nav a{
 
 .infsup_cont .head {
     position: relative;
-    height: 100px;
+    height: 50px;
     padding-bottom: 24px;
 }
+
+.infsup_cont .head .titre {
+    position: relative;
+}
+
+.infsup_cont .head .titre h3{
+    font-weight: 500;
+    font-size: 30px;
+    color: #2b2b2b;
+    margin: 0;
+}
+
 
 .infsup_cont .cont_elem {
     display: grid;
@@ -219,7 +232,8 @@ header .wrapper nav a{
     align-items: center;
     position: relative;
     height: 250px;
-    background:  #DFCFBE ;
+    background:  #ffffff ;
+    box-shadow: rgba(0, 0, 0, 0.473) 0px 0px 5px 0px;
     display: flex;
     margin: 30px 0;
     padding: 10px 10px 10px 10px
@@ -231,8 +245,8 @@ header .wrapper nav a{
     left: 0;
     width: 100%;
     height: 100%;
-    background: #333;
-    box-shadow: black 0px 0px 3px 0px;
+    background: #eec5af;
+    box-shadow: rgba(255, 255, 255, 0.37) 0px 0px 3px 0px;
     z-index: 1;
     display: flex;
     justify-content: center;
@@ -247,7 +261,9 @@ header .wrapper nav a{
     left: -75px;
     top: calc(50% - 75px);
     transition: 0.5s ease-in-out;
-    background: #9B2335;
+    background: #e0a12c;
+    box-shadow: rgba(64, 84, 126, 0.623) 5px 7px 13px 0;
+    border-radius: 100px;
 }
 
 .infsup_cont .card .imbox:before{
@@ -259,7 +275,7 @@ header .wrapper nav a{
     height: 100%;
     text-align: center;
     font-size: 6em;
-    color: rgb(255, 255, 255,.05);
+    color:rgba(51, 51, 51, 0.151);
     font-weight: 700;
 
 }
@@ -282,7 +298,7 @@ header .wrapper nav a{
     display: flex;
     justify-content: center;
     align-items: center;
-    background:#DFCFBE ;
+    background:#ffffff ;
 
 }
 
@@ -333,6 +349,7 @@ footer {
 
     .infsup_cont .card {
         width: 400px;
+        padding: 0 0 0 0;
     }
 }
 
@@ -353,6 +370,14 @@ footer {
         width: 100%;
         height: 200px;
         left: 0;
+        border-radius: 0;
+        box-shadow: none;
+
+    }
+
+    .infsup_cont .card .imbox:before {
+        content: none;
+
     }
 
     .infsup_cont .card .imbox img, .infsup_cont .card:hover .imbox img{
