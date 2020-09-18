@@ -82,6 +82,24 @@ header .wrapper nav a{
 
 }
 
+.infobox {
+    animation: pulse-red 2s infinite;
+}
+
+@keyframes pulse-red {
+    0% {
+        box-shadow: 0 0 0 0 rgba(150, 150, 150, 0.7);
+    }
+    
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
+    }
+    
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+    }
+}
+
 
 #infos {
     display: flex;
@@ -89,7 +107,7 @@ header .wrapper nav a{
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: calc(70vh - 100px);
+    height: calc(100vh - 100px);
     vertical-align: middle;
     background-image: url(../img/prog-css.jpg);
     background-position: 50%;
