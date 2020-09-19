@@ -32,6 +32,29 @@
     margin: 0;
 }
 
+.infsup_cont .head .titre h3:before{
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 4px;
+    background-color:#dd9f7e;
+    left: 0;
+    bottom: -5px;
+    border-radius: 100px;
+}
+
+.infsup_cont .head .titre h3:after{
+    content: "";
+    position: absolute;
+    width: 5%;
+    height: 4px;
+    background-color:#c58765;
+    left: 0;
+    bottom: -15px;
+    border-radius: 100px;
+}
+
+
 
 .infsup_cont .cont_elem {
     display: grid;
@@ -152,7 +175,17 @@
     
     /*------------  -------------- */
 
-
+    
+    .infsup_cont .head .titre h3:after{
+        content: "";
+        position: absolute;
+        width: 110px;
+        height: 4px;
+        background-color:#c58765;
+        left: 95px;
+        bottom: -15px;
+        border-radius: 100px;
+    }
 
 }
 
