@@ -169,7 +169,7 @@ footer {
     header .wrapper nav a{
         padding: 40px 7px;
         text-decoration: none;
-        font-size: 18px;
+        font-size: 15px;
         letter-spacing: 1px;
         white-space: nowrap;
         color: rgb(172, 162, 162);
@@ -216,5 +216,8 @@ footer {
 
     /*------------  -------------- */
 
+
+}
+@media (max-width: 768px){
 
 }
