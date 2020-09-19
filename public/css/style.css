@@ -1,5 +1,5 @@
-@import url("../css/infos.css"); /* import grid CSS */
-@import url("../css/infos-sup.css"); /* import grid CSS */
+@import url("/public/css/index/infos.css"); 
+@import url("/public/css/index/infos-sup.css"); 
 
 
 *{
