@@ -60,7 +60,7 @@ header .wrapper nav a{
     transition: .3s ease-in-out;
 }
 
-header .wrapper nav a.active {
+header .wrapper nav a.active-link {
     color: rgb(170, 45, 45);
 }
 
@@ -127,7 +127,6 @@ footer {
     /*------------    THIBAULT LETOURNEUR    -------------- */
 
     .infobox {
-        width: 90%;
 
     }
 
@@ -165,7 +164,6 @@ footer {
     }
     
     .infobox {
-            width: 90%;
     
     }
     
