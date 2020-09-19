@@ -57,10 +57,17 @@ header .wrapper nav a{
     letter-spacing: 1px;
     white-space: nowrap;
     color: rgb(172, 162, 162);
+    transition: .3s ease-in-out;
 }
 
 header .wrapper nav a.active {
     color: rgb(170, 45, 45);
+}
+
+header .wrapper nav a:hover {
+    color: rgb(211, 37, 37);
+    font-size: 19px;
+    transition: 0.1s ease-in-out;
 }
 
 
