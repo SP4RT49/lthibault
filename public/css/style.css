@@ -121,6 +121,10 @@ footer {
     margin: 0 0 0 0;
 }
 
+footer h4{
+    margin: 0;
+}
+
 
 @media (max-width: 992px){
 
