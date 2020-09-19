@@ -8,7 +8,7 @@
     width: 100%;
     height: calc(100vh - 100px);
     vertical-align: middle;
-    background-image: url(/public/img/prog-css.jpg);
+    background-image: url(../img/prog-css.jpg);
     background-position: 50%;
     background-size: cover;
 }
