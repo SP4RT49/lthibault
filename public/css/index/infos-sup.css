@@ -174,7 +174,12 @@
     }
     
     /*------------  -------------- */
+    .infsup_cont .head{        
+        padding-bottom: 17px;
+        display: flex;
+        justify-content: center;
 
+    }
     
     .infsup_cont .head .titre h3:after{
         content: "";
