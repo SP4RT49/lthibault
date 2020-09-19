@@ -214,8 +214,8 @@ footer {
 }
 @media (max-width: 479px){
 
-    header .wrapper {
-        width: 90%;
+    header {
+        padding: 0;
     }
 
     header .wrapper .nav {
