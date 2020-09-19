@@ -166,14 +166,8 @@ footer {
 
     /*------------    NAVBAR    -------------- */
 
-    header .wrapper nav a{
-        padding: 40px 7px;
-        text-decoration: none;
-        font-size: 15px;
-        letter-spacing: 1px;
-        white-space: nowrap;
-        color: rgb(172, 162, 162);
-
+    header .wrapper {
+        max-width: 479px;
     }
 
 
