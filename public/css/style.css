@@ -178,7 +178,7 @@ footer h4{
     header {
         border-radius: 0;
         bottom: 0;
-        width: 100%;
+        box-shadow: none;
     }
 
     header .wrapper nav a {
