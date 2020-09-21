@@ -191,4 +191,9 @@ footer h4{
         font-size: 15px;
     }
 
+    header .wrapper nav a:hover {
+        font-size: 13px;
+        transition: 0.1s ease-in-out;
+    }
+
 }
