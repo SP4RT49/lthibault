@@ -4,9 +4,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 64px 24px 72px;
+    padding: 32px 24px 30px;
     background: #F0DFD6;
-    box-shadow: black 0px 0px 50px 0px;
 }
 
 .infsup_cont{
@@ -20,6 +19,7 @@
     height: 50px;
     padding-bottom: 24px;
 }
+
 
 .infsup_cont .head .titre {
     position: relative;
@@ -154,6 +154,55 @@
     color: #fff;
 }
 
+/* footer */
+
+.infsup_cont .footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    padding-bottom: 24px;
+}
+
+.infsup_cont .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    text-decoration: none;
+    padding: 0 30px;
+    height: 40px;
+    width: 180px;
+    background: rgb(87, 80, 80);
+    box-shadow: 0 0 10px rgba(0,0,0,.25);
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+
+.infsup_cont .button span{
+    color: rgb(245, 241, 241);
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: 20px;
+    transition: .3s ease-in-out;
+}
+
+.infsup_cont .button:hover{
+    transition: .3s ease-in-out;
+    background: rgb(48, 201, 99);
+    box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.596);
+}
+
+.infsup_cont .button:hover span{
+    color: rgb(37, 35, 35);
+    transition: .3s ease-in-out;
+}
+
+.separateur{
+    width: 0;
+}
 
 @media (max-width: 992px){
 
@@ -233,6 +282,10 @@
         width: 100%;
     }
 
+    .separateur{
+        width: 75%;
+        background: #dd9f7e;
+    }
     /*------------  -------------- */
 
 

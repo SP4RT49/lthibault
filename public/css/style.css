@@ -1,5 +1,7 @@
 @import url("../css/index/infos.css"); 
 @import url("../css/index/infos-sup.css"); 
+@import url("../css/index/infos-end.css"); 
+
 
 
 *{
@@ -71,25 +73,6 @@ header .wrapper nav a:hover {
 
 .contindex {
     min-height: calc(100vh - 365px);
-}
-
-
-
-
-
-
-#infos-end {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: calc(auto - 100px);
-    vertical-align: middle;
-    /*background-image: url(/images/banner_dark.jpg);*/
-    background: rgb(130, 74, 184);
-    background-position: 50%;
-    background-size: cover;
 }
 
 /* ------------------------------ */
