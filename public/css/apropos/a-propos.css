@@ -1,0 +1,147 @@
+.a-propos{
+    min-height: calc(100vh)
+}
+
+.a-propos .wrapper{
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: #252525;
+}
+
+.a-propos .wrapper .Titre{
+    position: relative;
+    margin-bottom: 0;
+    padding: 1em .25em;
+    color: #fff;
+    background: #252525;
+    text-align: center;
+}
+.a-propos .wrapper .Titre:before{    
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 20px solid #252525;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.a-propos .wrapper .informations{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 32px;
+    gap: 32px;
+    padding: 60px 0 30px;
+    background: #ddd7d1;
+    margin: auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: rgb(82, 82, 82) 10px 10px 10px;
+}
+
+
+.a-propos .wrapper .informations .boutons{
+    position: absolute;
+    right: 250px;
+    width: auto;
+}
+
+.a-propos .wrapper .informations #photo{
+    display: flex;
+    overflow:hidden;
+    border-radius: 270px;
+    border-style: hidden;
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    margin-left: 40px;
+    transition: .2s ease-in-out;
+}
+
+.a-propos .wrapper .informations #photo:hover{
+    box-shadow: rgba(70, 68, 68, 0.356) 0 0 10px 1px;
+    transition: .1s ease-in-out;
+}
+
+.a-propos .wrapper .informations .description{
+    display: flex;
+    flex-direction: column;
+    grid-column: 2;
+}
+
+.a-propos .wrapper .informations .description h2{
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.a-propos .wrapper .informations .description h2 span{
+    color: #B5272A;
+}
+
+.a-propos .wrapper .informations .description h3{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0px;
+    padding-left: 10px;
+    background: black;
+    color: rgb(255, 255, 255);
+    width: 210px;
+    border-radius: 90px;
+}
+.a-propos .wrapper .informations .description h3 span{
+    color: #1adb2a;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+}
+
+
+.textDiv {
+    font-size: 20px;
+    background-color: rgb(150, 150, 150);
+    border-radius: 5px;
+    width: calc(100% - 25px);
+    padding: 15px;
+    margin-top: 5px;
+    font-weight: bold;
+    }
+
+.tbutton{
+    background: linear-gradient(0.15turn, #252525, #252525);
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+}
+.toggleBtn {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #DCD7D1;
+    box-shadow: rgb(74, 75, 74) 0 0 5px;
+    color:black;
+    font-family: monospace;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+.toggleBtn:hover{
+    background-color: #ffdbae;
+
+}
+
+.a-propos .wrapper .informations .description .textDiv h3{
+    background: linear-gradient(0.15turn, #252525, #252525);
+    width: 130px;
+
+    
+}
+

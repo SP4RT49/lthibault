@@ -1,6 +1,7 @@
 @import url("../css/index/infos.css"); 
 @import url("../css/index/infos-sup.css"); 
 @import url("../css/index/infos-end.css"); 
+@import url("../css/apropos/a-propos.css"); 
 
 
 
@@ -38,7 +39,7 @@ header .wrapper {
 }
 
 
-img {
+.contindex img {
     border-style: none;
 }
 
@@ -65,6 +66,7 @@ header .wrapper nav a.active-link {
 header .wrapper nav a:hover {
     font-size: 19px;
     transition: 0.1s ease-in-out;
+    text-shadow: rgba(85, 82, 82, 0.404) 2px 1px 4px ;
 }
 
 
@@ -74,6 +76,7 @@ header .wrapper nav a:hover {
 .contindex {
     min-height: calc(100vh - 365px);
 }
+
 
 /* ------------------------------ */
 
