@@ -184,6 +184,11 @@ footer h4{
 
     header .wrapper nav a {
         padding: 40px 8px;
+        font-size: 13px;
+    }
+
+    header .wrapper nav a.active-link {
         font-size: 15px;
     }
+
 }
