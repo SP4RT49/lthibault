@@ -33,7 +33,7 @@
                         <div class="boutons">
                             <h2 class="tbutton">Profil : <button class="toggleBtn" onclick="changeImage()">Le Dev</button></h2>
                         </div>
-                        <img id="photo" src="/public/img/Thibault.png" >
+                        <img id="photo" src="public/img/Thibault.png" >
                         <div class="description">
                             <h2>
                                 Thibault <span>Letourneur</span>
@@ -60,7 +60,7 @@
 
                                 var x = document.querySelector(".textDiv");
                                 if (x.innerHTML === "<h3>Le Dev</h3>") {
-                                    x.innerHTML = "<h3>Le Gamer</h3> <p> test paragraph</p>";
+                                    x.innerHTML = "<h3>Le Gamer</h3> <p>Je suis un passionné de jeux vidéos depuis tout petit. C'est en regardant jouer ma mère sur la Playstation 1 que cette passion m'est venue.</p> <p>J'ai donc commencé à jouer dès mon plus jeune âge sur la Playstation 1 sur des jeux comme Grand TurismoJe joue sur PC uniquement maintenant sur du League of Legends , Minecraft , Paladins/Overwatch , et bien d'autres jeux coop et survie . J'suis sur un peu de tout enfaite</p>";
                                 } else {
                                     x.innerHTML = "<h3>Le Dev</h3>";
                                     }
@@ -71,15 +71,15 @@
                                 function changeImage() {
                                     
                                 if ( n == 0 ) {
-                                    document.images["photo"].src = "/public/img/logodiscord.png";
+                                    document.images["photo"].src = "public/img/logodiscord.png";
                                     n = 1;
                                 }
                                 else if ( n == 1 ) {
-                                    document.images["photo"].src = "/public/img/Thibault.png";
+                                    document.images["photo"].src = "public/img/Thibault.png";
                                     n = 0;
                                 }
                                 else {
-                                    document.images["photo"].src = "/public/img/logodiscord.png";
+                                    document.images["photo"].src = "public/img/logodiscord.png";
                                     n = 0;
                                 }
                                 }
