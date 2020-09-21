@@ -19,6 +19,7 @@ header {
     z-index: 1000;
     position: absolute;
     bottom: 15px;
+    background: rgba(245, 245, 245, 0.411);
     box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.192);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -179,9 +180,11 @@ footer h4{
     header {
         bottom: 0;
         box-shadow: none;
+        background: none;
     }
 
     header .wrapper nav a {
+        padding: 40px 7px;
         font-size: 13px;
     }
 
