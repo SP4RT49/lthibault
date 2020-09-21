@@ -55,6 +55,7 @@ header .wrapper nav a{
 }
 
 header .wrapper nav a.active-link {
+    font-size: 19px;
     color: rgb(170, 45, 45);
 }
 
