@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(100vh);
     vertical-align: middle;
     background-image: linear-gradient(rgba(78, 78, 78, 0.342), rgba(0, 0, 0, 0.342)), url("../../img/prog-css.jpg");
     background-position: 50%;

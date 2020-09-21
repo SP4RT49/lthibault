@@ -17,15 +17,13 @@ head {
 
 header {    
     z-index: 1000;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background: #F0DFD6;
-    box-shadow: 0 7px 10px rgba(109, 122, 139, 0.192);
+    position: absolute;
+    bottom: 15px;
+    box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.192);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transition-duration: .3s;
+    border-radius: 90px;
     padding: 0 24px;
 }
 
@@ -36,10 +34,6 @@ header .wrapper {
     align-items: center;
 }
 
-header .wrapper .logo {
-    display: block;
-    width: 15%;
-}
 
 img {
     border-style: none;
@@ -56,7 +50,7 @@ header .wrapper nav a{
     font-size: 18px;
     letter-spacing: 1px;
     white-space: nowrap;
-    color: rgb(172, 162, 162);
+    color: rgb(39, 38, 38);
     transition: .3s ease-in-out;
 }
 
@@ -65,7 +59,6 @@ header .wrapper nav a.active-link {
 }
 
 header .wrapper nav a:hover {
-    color: rgb(211, 37, 37);
     font-size: 19px;
     transition: 0.1s ease-in-out;
 }
@@ -183,12 +176,13 @@ footer h4{
 @media (max-width: 479px){
 
     header {
-        padding: 0;
+        border-radius: 0;
+        bottom: 0;
+        width: 100%;
     }
 
-
     header .wrapper nav a {
-        padding: 40px 7px;
+        padding: 40px 8px;
         font-size: 15px;
     }
 }
