@@ -177,13 +177,11 @@ footer h4{
 @media (max-width: 479px){
 
     header {
-        border-radius: 0;
         bottom: 0;
         box-shadow: none;
     }
 
     header .wrapper nav a {
-        padding: 40px 8px;
         font-size: 13px;
     }
 
