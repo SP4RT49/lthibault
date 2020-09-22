@@ -8,6 +8,7 @@
 *{
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
 }
 html {
     line-height: 1.15;
@@ -76,10 +77,11 @@ header.sticky{
     background: #2525255e;
     position: fixed;
     left: -466px;
-    transition: .3s ease-in-out;
+    transition: .5s ease-in-out;
 }
 header.sticky:hover{
     left: 10px;
+    transition: .5s ease-in-out;
 }
 
 header.sticky2{
