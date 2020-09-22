@@ -209,12 +209,22 @@
                                         } else {
                                             y.innerHTML = "Le Dev";
                                             }
-        
+
+                                        var dev = "<h3>Le Dev</h3>"
+                                                    +"<p>J'ai commencé le développement assez jeune, en commençant par de petits programmes .bat pour impressionner les copains à l'école, puis par du simple HTML/CSS pour me faire ma propre page d'accueil.</p>"
+                                                    +"<p>Aujourd'hui je pousse la chose un peu plus loin en m'essayant à divers langage en simultané, HTML/CSS/Java ainsi que du node.js notamment pour la création de bots Discord.</p>";
+                                        
+                                        var gameur = "<h3>Le Gameur</h3>"
+                                                        +"<p>Je suis un passionné de jeux vidéos depuis tout petit. C'est en regardant jouer ma mère sur la Playstation 1 que cette passion m'est venue.</p>"
+                                                        +"<p>J'ai donc commencé à jouer dès mon plus jeune âge sur la Playstation 1 sur des jeux comme Grand Turismo ou Crash bandicoot.</p>"
+                                                        +"<p>Vinrent les époques de la PS3 ou j'ai commencé mes premiers Call of Duty dont j'ai fais la collection et ou j'ai même participé à quelques compétitions.</p>"
+                                                        +"<p> Actuellement je joue sur PC uniquement, sur divers jeux tendance style MMORPG / FPS ou comme des jeux en coopération ou de survie.</p>";
+
                                         var x = document.querySelector(".textDiv");
-                                        if (x.innerHTML === "<h3>Le Dev</h3> <p>J'ai commencé le développement assez jeune, en commençant par de petits programmes .bat pour impressionner les copains à l'école, puis par du simple HTML/CSS pour me faire ma propre page d'accueil.</p> <p>Aujourd'hui je pousse la chose un peu plus loin en m'essayant à divers langage en simultané, HTML/CSS/Java ainsi que du node.js notamment pour la création de bots Discord.</p>") {
-                                            x.innerHTML = "<h3>Le Gameur</h3> <p>Je suis un passionné de jeux vidéos depuis tout petit. C'est en regardant jouer ma mère sur la Playstation 1 que cette passion m'est venue.</p> <p>J'ai donc commencé à jouer dès mon plus jeune âge sur la Playstation 1 sur des jeux comme Grand Turismo ou Crash bandicoot.</p> <p>Vinrent les époques de la PS3 ou j'ai commencé mes premiers Call of Duty dont j'ai fais la collection et ou j'ai même participé à quelques compétitions.</p> <p> Actuellement je joue sur PC uniquement, sur divers jeux tendance style MMORPG / FPS ou comme des jeux en coopération ou de survie.</p>";
+                                        if (x.innerHTML === gameur) {
+                                            x.innerHTML = dev;
                                         } else {
-                                            x.innerHTML = "<h3>Le Dev</h3> <p>J'ai commencé le développement assez jeune, en commençant par de petits programmes .bat pour impressionner les copains à l'école, puis par du simple HTML/CSS pour me faire ma propre page d'accueil.</p> <p>Aujourd'hui je pousse la chose un peu plus loin en m'essayant à divers langage en simultané, HTML/CSS/Java ainsi que du node.js notamment pour la création de bots Discord.</p>";
+                                            x.innerHTML = gameur;
                                             }
                                         }
         
@@ -244,7 +254,7 @@
                             <div class="competences">
                                 <h1 class="titre">Compétences</h1>
                                 <div class="content">
-                                    <a href="#" class="box">
+                                    <a href="https://www.pierre-giraud.com/html-css-apprendre-coder-cours/definition-utilisation/" class="box" target="_blank">
                                         <img alt="#" src="public/img/comp-htmlcss.jpg">                                        
                                         <h2>HTML/CSS</h2>
                                         <p>Description</p>
@@ -252,7 +262,7 @@
                                             <div class="skill_level"></div>
                                         </div>
                                     </a>
-                                    <a href="#" class="box">
+                                    <a href="https://developer.mozilla.org/fr/docs/Learn/JavaScript/First_steps/What_is_JavaScript" class="box" target="_blank">
                                         <img alt="#" src="public/img/comp-js.jpg">
                                         <h2>JavaScript</h2>
                                         <p>Description</p>
@@ -260,7 +270,7 @@
                                             <div class="skill_level"></div>
                                         </div>
                                     </a>
-                                    <a href="#" class="box">
+                                    <a href="https://www.figma.com/" class="box" target="_blank">
                                         <img alt="#" src="public/img/comp-figma.jpg">
                                         <h2>Figma</h2>
                                         <p>Description</p>
@@ -268,7 +278,7 @@
                                             <div class="skill_level"></div>
                                         </div>
                                     </a>
-                                    <a href="#" class="box">
+                                    <a href="https://www.adobe.com/fr/products/illustrator.html?sdid=88X75SL1&mv=search&ef_id=CjwKCAjwwab7BRBAEiwAapqpTC6wrEr9kzhO_raFqUvW_u1YWK46e641eTmjgnrUAunbwBVVLXapcBoCQq4QAvD_BwE:G:s&s_kwcid=AL!3085!3!341240860982!e!!g!!adobe%20illustrator!1478148655!58836721084" class="box" target="_blank">
                                         <img alt="#" src="public/img/comp-ai.jpg">
                                         <h2>Adobe Illustrator</h2>
                                         <p>Description</p>
@@ -276,7 +286,7 @@
                                             <div class="skill_level"></div>
                                         </div>
                                     </a>
-                                    <a href="#" class="box">
+                                    <a href="https://www.adobe.com/fr/products/photoshop.html?sdid=88X75SL1&mv=search&ef_id=CjwKCAjwwab7BRBAEiwAapqpTHWCYm3dKuOjJBA2uojuEN36X6XSb-1krYAyjav0omfb9hO1pWNcSxoC7WkQAvD_BwE:G:s&s_kwcid=AL!3085!3!341240721080!e!!g!!adobe%20photoshop!1435912275!56537390339" class="box" target="_blank">
                                         <img alt="#" src="public/img/comp-ap.jpg">
                                         <h2>Adobe Photoshop</h2>
                                         <p>Description</p>
@@ -284,7 +294,7 @@
                                             <div class="skill_level"></div>
                                         </div>
                                     </a>
-                                    <a href="#" class="box">
+                                    <a href="https://git-scm.com/" class="box" target="_blank">
                                         <img alt="#" src="public/img/comp-git.jpg">
                                         <h2>Git</h2>
                                         <p>Description</p>
