@@ -29,6 +29,7 @@ header {
     transition-duration: .3s;
     border-radius: 90px;
     padding: 0 24px;
+    transition: .9s ease-in-out;
 }
 
 header .wrapper {
@@ -69,6 +70,21 @@ header .wrapper nav a:hover {
     text-shadow: rgba(85, 82, 82, 0.404) 2px 1px 4px ;
 }
 
+/* nouvelle nav bar si Infos est dépassé */
+
+header.sticky{
+    background: #2525255e;
+    position: fixed;
+    left: -466px;
+    transition: .3s ease-in-out;
+}
+header.sticky:hover{
+    left: 10px;
+}
+
+header.sticky2{
+    background: rgba(245, 245, 245, 0.411);
+}
 
 
 /* Infos Sections */
