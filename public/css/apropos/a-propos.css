@@ -1,12 +1,12 @@
 .a-propos{
     min-height: calc(100vh);
-    background-color: #252525;
 }
 
 .a-propos .wrapper{
     margin: 0 auto;
     max-width: 100%;
     background-color: #252525;
+    padding-bottom: 40px;
 }
 
 .a-propos .wrapper .Titre{
@@ -173,7 +173,6 @@
     padding: 50px 32px ;
     margin: auto;
     max-width: 1200px;
-    border-radius: 0px 0 10px 10px;
     box-shadow: rgb(82, 82, 82) 10px 10px 10px;
     background: #DCD7D1;
 }

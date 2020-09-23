@@ -2,6 +2,7 @@
 @import url("../css/index/infos-sup.css"); 
 @import url("../css/index/infos-end.css"); 
 @import url("../css/apropos/a-propos.css"); 
+@import url("../css/experiences/experiences.css"); 
 
 
 
@@ -74,20 +75,68 @@ header .wrapper nav a:hover {
 /* nouvelle nav bar si Infos est dépassé */
 
 header.sticky{
-    background: #2525255e;
+    animation: nav-mid 2s infinite;
+    background: #252525d7;
     position: fixed;
     left: -466px;
-    transition: .5s ease-in-out;
+    transition: left 0.5s ease-in-out;
+    overflow: hidden;
 }
+
+header.sticky .wrapper nav a{
+    color: #F0DFD6;
+}
+header.sticky .wrapper nav a.active-link {
+    font-size: 19px;
+    color: #e7c0aa;
+    font-weight: 500;
+}
+
+@keyframes nav-mid{
+    
+    0% {   
+        left: -470px;
+        box-shadow: 0 0 0 0 rgba(150, 150, 150, 0.7);
+    }
+    40% {
+        left: -480px;
+    }
+
+    70% {
+        left: -480px;
+        box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
+    }
+    100% {
+        left: -470px;
+        box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+    }
+}
+
 header.sticky:hover{
-    left: 10px;
+    animation: nav-active .5s ease-in-out;
     transition: .5s ease-in-out;
+    left: 10px;
+}
+@keyframes nav-active{
+    
+    0% {   
+        left: -480px;
+    }
+    100% {
+        left: 10px;
+    }
 }
 
 header.sticky2{
     background: rgba(245, 245, 245, 0.411);
 }
-
+header.sticky2 .wrapper nav a{
+    color: #252525;
+}
+header.sticky2 .wrapper nav a.active-link {
+    font-size: 19px;
+    color: #353232;
+}
 
 /* Infos Sections */
 
