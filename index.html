@@ -34,7 +34,7 @@
                                         <a href="#infos-sup" title="Accueil"  class="active-link">Accueil</a>
                                         <a href="#a-propos" title="À Propos" class>À Propos</a>
                                         <a href="#experiences" title="Experiences" class>Experiences</a>
-                                        <a href="#" title="Contacter" class>Contacter</a>
+                                        <a href="#contacter" title="Contacter" class>Contacter</a>
                                     </nav>
                             </div>
                                                 
@@ -194,10 +194,10 @@
                                                                         
                                     <div class="textDiv">
                                         <h3>Le Dev</h3>
-                                            <p>J'ai commencé le développement assez jeune, en commençant par de petits programmes .bat pour impressionner les copains à l'école, puis par du simple HTML/CSS pour me faire ma propre page d'accueil.</p>
-                                            <p>Aujourd'hui je pousse la chose un peu plus loin en m'essayant à divers langages en simultané, HTML/CSS/PHP/Java ainsi que du node.js notamment pour la création de bots Discord.</p>
-                                            <p>Actuellement etudiant en chemin pour devenir Webmaster, je recherche une entreprise pouvant m'accueillir pour de l'alternance</p>
-
+                                        <p>J'ai commencé le développement assez jeune, en commençant par de petits programmes .bat pour impressionner les copains à l'école, puis par du simple <span class="langage">HTML</span>/<span class="langage">CSS</span> pour me faire ma propre page d'accueil.</p>
+                                        <p>Aujourd'hui je pousse la chose un peu plus loin en m'essayant à divers langages en simultané, <span class="langage">HTML</span>/<span class="langage">CSS</span>/<span class="langage">PHP</span>/<span class="langage">Java</span> ainsi que du <span class="langage">node.js</span> notamment pour la création de bots Discord.</p>
+                                        <p>Actuellement etudiant et souhaitant un jour devenir Webmaster, suis à la recherche d'une entreprise pouvant m'accueillir pour de l'alternance</p>
+                            
                                     </div>
         
                                 </div>
@@ -290,6 +290,71 @@
                             </div>
         
                         </div>
+                    </div>
+                </section>
+
+                <section class="contacter" id="contacter">
+                    <div class="content">
+                        <h2>Me Contacter</h2>
+                        <p>Description</p>
+                    </div>
+                    <div class="container">
+                        <div class="contact_info">
+                            <div class="box">
+                                <div class="icon"></div>
+                                <div class="text">
+                                    <h3>Titre</h3>
+                                    <p>Descri iiiiiiiiiii iiiiiiiiiiiiiii iiiiiiiiiiiiii<br>lien</p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="icon"></div>
+                                <div class="text">
+                                    <h3>Email</h3>
+                                    <p>lien</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contactForm">
+                            <form id="contact-form" action="index.html#contacter">
+                                <h2>Envoyer un Message</h2>
+                                <div class="inputBox">
+                                    <input type="hidden" name="contact_number">
+                                </div>
+                                <div class="inputBox">
+                                    <input type="text" name="user_name" required="required">
+                                    <span>Nom Prénom / Société</span>
+                                </div>
+                                <div class="inputBox">
+                                    <input type="email" name="user_email" required="required">
+                                    <span>Email</span>
+                                </div>
+                                <div class="inputBox">
+                                    <textarea name="message" required="required"></textarea>
+                                    <span>Votre Message</span>
+                                </div>
+                                <div class="inputBox">
+                                    <input type="submit" value="Send">
+                                </div>
+                            </form>
+                        </div>
+                        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+                        <script type="text/javascript">
+                            (function(){
+                            emailjs.init('user_t1L8BKwOoAo5OmWQiq57d');
+                            })();
+                        </script>
+                        <script type="text/javascript">
+                            window.onload = function() {
+                                document.getElementById('contact-form').addEventListener('submit', function(event) {
+                                    event.preventDefault();
+                                    this.contact_number.value = Math.random() * 100000 | 0;
+                                    emailjs.sendForm('contact_service', 'contact_form', this);
+                                });
+                            }
+                        </script>
+                        
                     </div>
                 </section>
 
