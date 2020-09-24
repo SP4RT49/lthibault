@@ -42,13 +42,50 @@
     grid-template-columns: 1fr 2fr;
     grid-gap: 32px;
     gap: 32px;
-    padding: 60px 0 30px;
     background: #ddd7d1;
     margin: auto;
     max-width: 1200px;
     border-radius: 10px 10px 0 0;
     box-shadow: rgb(82, 82, 82) 10px 10px 10px;
 }
+
+/* PROFIL */
+
+.a-propos .wrapper .informations .profil{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.a-propos .wrapper .informations .profil h2{
+    font-size: 30px;
+    color: #000;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+.a-propos .wrapper .informations .profil h2 span{
+    color: #B5272A;
+}
+
+/* AUTO-TEXT WRITTING */
+.a-propos .wrapper .informations .profil h3{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0px;
+    padding-left: 10px;
+    background: black;
+    color: rgb(255, 255, 255);
+    width: 210px;
+    border-radius: 90px;
+}
+.a-propos .wrapper .informations .profil h3 span{
+    color: #1adb2a;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+}
+
 
 /* Bouton Switch Profil */
 
@@ -68,50 +105,130 @@
     color: white;
 }
 
-.tbutton{
-    background: linear-gradient(0.15turn, #252525, #252525);
-    border-radius: 5px;
-    font-size: 18px;
-    color: white;
-    padding: 5px 10px;
+/* BOUTON CHOIX PROFIL */
+.a-propos .wrapper .informations .description .bchoix{
+    position: relative;
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 45px;
 }
-.toggleBtn {
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-    background-color: #DCD7D1;
-    box-shadow: rgb(74, 75, 74) 0 0 5px;
-    color:black;
-    font-family: monospace;
-    font-size: 18px;
+
+.a-propos .wrapper .informations .description label.boutons{
+    margin: 0;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.a-propos .wrapper .informations .description label input{
+    appearance: none;
+    -webkit-appearance: none;
     cursor: pointer;
-    transition: background-color .5s;
-    margin-left: 5px;
 }
 
-.toggleBtn:hover{
-    background-color: #ffdbae;
-
+.a-propos .wrapper .informations .description label input:checked ~ h2{
+    color: rgb(245, 154, 50);
 }
+
+
+.a-propos .wrapper .informations .description label.boutons h2.tb1{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 90px;
+    height: 40px;
+    background: #252525;
+    text-align: center;
+    font-size: 15px;    
+    border-radius: 10px;
+    box-shadow: -1px 1px 3px rgb(56, 56, 56),
+                -3px 3px 9px rgb(65, 65, 65);
+    cursor: pointer;
+}
+.a-propos .wrapper .informations .description label.boutons h2.tb1:hover{
+    box-shadow: -1px 1px 3px  rgb(56, 56, 56),
+                -3px 3px 9px rgb(65, 65, 65),
+                inset 1px -1px 3px rgb(56, 56, 56),
+                inset 2px -2px 9px  rgb(65, 65, 65);
+}
+
+
+.a-propos .wrapper .informations .description label.boutons h2.tb2{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 90px;
+    height: 40px;
+    background: #252525;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgb(56, 56, 56),
+                3px 3px 9px rgb(65, 65, 65);
+    cursor: pointer;
+}
+
+.a-propos .wrapper .informations .description label.boutons h2.tb2:hover{
+    
+    box-shadow: 1px 1px 3px rgb(56, 56, 56),
+                3px 3px 9px rgb(65, 65, 65),
+                inset -1px -1px 3px rgb(56, 56, 56),
+                inset -2px -2px 9px rgb(65, 65, 65);
+}
+
+/* CONTENU AFFICHER QUAND CHOIX "DEV" ou "GAMEUR */
 
 .textDiv {
+    position: relative;
     font-size: 20px;
-    background-color: #DCD7D1;
-    border: 1px solid rgb(179, 172, 172);
-    box-shadow: rgb(190, 170, 170) 2px 3px 10px;
     border-radius: 5px;
     width: calc(100% - 25px);
     padding: 15px;
     margin-top: 5px;
     font-weight: bold;
-    }
+}
 
 .a-propos .wrapper .informations .description .textDiv h3{
     background: linear-gradient(0.15turn, #252525, #252525);
-    width: 140px;
-
-    
+    padding-left: 0;
+    width: 140px; 
+    text-align: center;
 }
+.textDiv p{    
+    color: #252525;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 9px #252525,
+                -1px -1px 9px #252525;
+    background: none;
+    transition: .3s ease-in-out;
+    text-align: justify;
+}
+.textDiv p:hover{    
+    background: linear-gradient(0.15turn, #252525, #252525);
+    color: whitesmoke;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+.textDiv p:hover span.langage{
+    color: rgb(245, 154, 50);
+    transition: .3s ease-in-out;
+}
+
+.textDiv span.langage{
+    color: #B5272A;
+    transition: .3s ease-in-out;
+}
+
+.textDiv span.sTitre{
+    font-size: 18px;
+    text-decoration-line: underline;
+}
+
+/* ---- FIN TEXTDIV ---- */
 
 .a-propos .wrapper .informations #photo{
     display: flex;
@@ -122,8 +239,6 @@
     height: 350px;
     background-size: cover;
     background-position: center;
-    margin-left: 40px;
-    transition: .2s ease-in-out;
 }
 
 .a-propos .wrapper .informations #photo:hover{
@@ -131,10 +246,14 @@
     transition: .1s ease-in-out;
 }
 
+
+/* DESCRIPTION PROFIL */
+
 .a-propos .wrapper .informations .description{
     display: flex;
     flex-direction: column;
     grid-column: 2;
+    padding-top: 50px;
 }
 
 .a-propos .wrapper .informations .description h2{

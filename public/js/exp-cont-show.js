@@ -1,8 +1,54 @@
+
+
+//SECTION DU PROFIL OU CHOIX "THIBAULT" ou "DEV"
+
+function GameurImg(){
+
+    document.images["photo"].src = "public/img/logodiscord.png";
+}
+
+function tgameur(){
+
+    var n3 = "<h3>Thibault</h3>";
+        
+    var d3 = '<p><span class="sTitre">Passionné :</span><br>'
+            +'Je suis un passionné de programmation, le fait de créer sois même quelque chose de A à Z, de voir l\'avancée de son projet en temps réel, de se confronter à des erreurs et de les résoudres pour que ça refonctionne, re-travailler son projet pour le poffiner, l\'améliorer, le modifier pour qu\'à la fin il te convienne et soit utilisable sans aucun soucis. <br>Voilà pourquoi je suis passioné par la programmation.'
+            +'<p><span class="sTitre">Créatif :</span><br>'
+            +"À l'école pendant mon temps libre j'aimais passer du temps à dessinner dans mon cahier de brouillon, des personnages, des formes 3D et leurs perspectives et bien d'autres. <br>"
+            +"Aujourd'hui ça n'est plus sur mon cahier de brouillon que je dessine, mais sur tablette graphique via Adobe Photoshop ou Adobe Illustrator dans la création d'images ou logos en tout genre.</p>";
+
+        
+        
+    document.querySelector(".textDiv").innerHTML = n3 + d3;
+}
+
+function DevImg(){
+
+    document.images["photo"].src = "public/img/Thibault.png";    
+}
+
+function tDev(){
+
+    var nD = "<h3>Le Dev</h3>";
+        
+    var dD = '<p>J\'ai commencé le développement assez jeune, en commençant par de petits programmes .bat pour impressionner les copains à l\'école, puis par du simple <span class="langage">HTML</span>/<span class="langage">CSS</span> pour me faire ma propre page d\'accueil.</p>'
+            +'<p>Aujourd\'hui je pousse la chose un peu plus loin en m\'essayant à divers langages en simultané, <span class="langage">HTML</span>/<span class="langage">CSS</span>/<span class="langage">PHP</span>/<span class="langage">Java</span> ainsi que du <span class="langage">node.js</span> notamment pour la création de bots Discord.</p>'
+            +'<p>Actuellement etudiant et souhaitant un jour devenir Webmaster, suis à la recherche d\'une entreprise pouvant m\'accueillir pour de l\'alternance</p>';
+
+        
+        
+    document.querySelector(".textDiv").innerHTML = nD + dD;
+}
+
+
+
+//CHOIX DES EXPERIENCES
+
 function text1(){
 
     var n = "<h1>Titre 1</h1>";
 
-    var d = "<p>description du turfu tahu</p>";
+    var d = "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>";
 
 
     document.getElementById("nom").innerHTML = n;
@@ -14,7 +60,7 @@ function text2(){
 
     var n2 = "<h1>Titre 2</h1>";
     
-    var d2 = "<p>description du turfu tahu2</p>";
+    var d2 = "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>";
     
     
     document.getElementById("nom").innerHTML = n2;
@@ -26,11 +72,8 @@ function text3(){
 
     var n3 = "<h1>Titre 3</h1>";
         
-     var d3 = "<p>Je suis un passionné de jeux vidéos depuis tout petit. C'est en regardant jouer ma mère sur la Playstation 1 que cette passion m'est venue.</p>"
-     +"<p>J'ai donc commencé à jouer dès mon plus jeune âge sur la Playstation 1 sur des jeux comme Grand Turismo ou Crash bandicoot.</p>"
-     +"<p>Vinrent les époques de la PS3 ou j'ai commencé mes premiers Call of Duty dont j'ai fais la collection et ou j'ai même participé à quelques compétitions.</p>"
-     +"<p> Actuellement je joue sur PC uniquement, sur divers jeux tendance style MMORPG / FPS ou comme des jeux en coopération ou de survie.</p>";
-
+     var d3 = "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"
+     
         
         
     document.getElementById("nom").innerHTML = n3;

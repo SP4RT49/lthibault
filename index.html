@@ -170,77 +170,36 @@
                                 <h1>À Propos</h1>
                             </div>
                             <div class="informations">
-                                
-                                <img id="photo" src="public/img/Thibault.png" >
-                                <div class="description">
-                                    
-                                    <h2>
-                                        Thibault <span>Letourneur</span>
-                                        <div class="boutons">
-                                            <h2 class="tbutton">Profil : <button class="toggleBtn" onclick="changeImage()">Le Dev</button></h2>
-                                        </div>
-                                    </h2>
+                                <div class="profil">
+                                    <img id="photo" src="public/img/Thibault.png" >
+                                    <h2>Thibault <span>Letourneur</span></h2>
                                     <h3>>
                                         <span
                                         class="txt-rotate"
                                         data-period="2000"
                                         data-rotate='[ "Développeur Web", "Apprenti node.js", "Passioné de Dessin" ]'></span> 
                                     </h3>
+                                </div>
+                                <div class="description"> 
+                                        <div class="bchoix">
+                                            <label class="boutons">
+                                                <input type="radio" name="age" class="btn" onclick="GameurImg() + tgameur()">
+                                                <h2 class="tb2">Thibault</h2>
+                                            </label>
+                                            <label class="boutons">
+                                                <input type="radio" name="age" class="btn" onclick="DevImg() + tDev()">
+                                                <h2 class="tb1">Le Dev</h2>
+                                            </label>
+                                        </div>
+                                                                        
                                     <div class="textDiv">
-                                        <h3>Le Dev</h3> 
-                                        <p>J'ai commencé le développement assez jeune, en commençant par de petits programmes .bat pour impressionner les copains à l'école, puis par du simple HTML/CSS pour me faire ma propre page d'accueil.</p> 
-                                        <p>Aujourd'hui je pousse la chose un peu plus loin en m'essayant à divers langage en simultané, HTML/CSS/Java ainsi que du node.js notamment pour la création de bots Discord.</p>
+                                        <h3>Le Dev</h3>
+                                            <p>J'ai commencé le développement assez jeune, en commençant par de petits programmes .bat pour impressionner les copains à l'école, puis par du simple HTML/CSS pour me faire ma propre page d'accueil.</p>
+                                            <p>Aujourd'hui je pousse la chose un peu plus loin en m'essayant à divers langages en simultané, HTML/CSS/PHP/Java ainsi que du node.js notamment pour la création de bots Discord.</p>
+                                            <p>Actuellement etudiant en chemin pour devenir Webmaster, je recherche une entreprise pouvant m'accueillir pour de l'alternance</p>
+
                                     </div>
         
-                                    <script>document
-                                        .querySelector(".toggleBtn")
-                                        .addEventListener("click", toggleText);
-                                        function toggleText() {
-        
-                                            var y = document.querySelector(".toggleBtn");
-                                        if (y.innerHTML === "Le Dev") {
-                                            y.innerHTML = "Le Gameur";
-                                        } else {
-                                            y.innerHTML = "Le Dev";
-                                            }
-
-                                        var dev = "<h3>Le Dev</h3>"
-                                                    +"<p>J'ai commencé le développement assez jeune, en commençant par de petits programmes .bat pour impressionner les copains à l'école, puis par du simple HTML/CSS pour me faire ma propre page d'accueil.</p>"
-                                                    +"<p>Aujourd'hui je pousse la chose un peu plus loin en m'essayant à divers langages en simultané, HTML/CSS/PHP/Java ainsi que du node.js notamment pour la création de bots Discord.</p>"
-                                                    +"<p>Actuellement etudiant en chemin pour devenir Webmaster, je recherche une entreprise pouvant m'accueillir pour de l'alternance</p>";
-                                        
-                                        var gameur = "<h3>Le Gameur</h3>"
-                                                        +"<p>Je suis un passionné de jeux vidéos depuis tout petit. C'est en regardant jouer ma mère sur la Playstation 1 que cette passion m'est venue.</p>"
-                                                        +"<p>J'ai donc commencé à jouer dès mon plus jeune âge sur la Playstation 1 sur des jeux comme Grand Turismo ou Crash bandicoot.</p>"
-                                                        +"<p>Vinrent les époques de la PS3 ou j'ai commencé mes premiers Call of Duty dont j'ai fais la collection et ou j'ai même participé à quelques compétitions.</p>"
-                                                        +"<p> Actuellement je joue sur PC uniquement, sur divers jeux tendance style MMORPG / FPS ou comme des jeux en coopération ou de survie.</p>";
-
-                                        var x = document.querySelector(".textDiv");
-                                        if (x.innerHTML === gameur) {
-                                            x.innerHTML = dev;
-                                        } else {
-                                            x.innerHTML = gameur;
-                                            }
-                                        }
-        
-                                        var n = 0;
-        
-                                        function changeImage() {
-                                            
-                                        if ( n == 0 ) {
-                                            document.images["photo"].src = "public/img/logodiscord.png";
-                                            n = 1;
-                                        }
-                                        else if ( n == 1 ) {
-                                            document.images["photo"].src = "public/img/Thibault.png";
-                                            n = 0;
-                                        }
-                                        else {
-                                            document.images["photo"].src = "public/img/logodiscord.png";
-                                            n = 0;
-                                        }
-                                        }
-                                    </script>
                                 </div>
 
                                         
