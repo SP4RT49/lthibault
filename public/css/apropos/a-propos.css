@@ -387,5 +387,15 @@
     flex: 1;
 }
 
+@media (max-width: 880px){
+    .a-propos .wrapper .informations{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .a-propos .wrapper .competences h1.titre:before{
+        width: 70%;
+    }
+}
 
 
