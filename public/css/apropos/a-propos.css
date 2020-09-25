@@ -398,4 +398,14 @@
     }
 }
 
+@media (max-width: 479px){
+    .a-propos .wrapper .Titre{
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    } .a-propos .wrapper .Titre h1{
+        font-size: 25px;
+    }
+}
+
 

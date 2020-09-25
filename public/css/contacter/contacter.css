@@ -166,3 +166,28 @@
         width: 100%;
     }
 }
+
+@media (max-width: 479px){
+    .contacter .content h2{
+        font-size: 20px;
+    }
+    .container .contact_info .box .text{
+        font-size: 13px;
+    }
+
+    .contactForm{
+        padding: 10px;
+        text-align: center;
+    }
+
+    .contactForm h2{
+        font-size: 20px;
+    }
+
+    .contactForm .inputBox input[type="submit"]{
+        width: 150px;
+        margin-top: 0;;
+    }
+
+
+}
