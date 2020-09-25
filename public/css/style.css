@@ -251,9 +251,8 @@ footer h4{
 
     header .wrapper{
         display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
+        width: 350px;
+        max-width: 100%;
     }
     header .wrapper nav{
         width: 100%;
@@ -272,9 +271,17 @@ footer h4{
         background: #252525d7;
     }
 
+    header.sticky{
+        width: 100%;
+    }
+    header.sticky .wrapper {
+        width: 300px;
+    }
+
     header.sticky:hover{
         left: 0;
     }
+
 
     @keyframes nav-mid{
     
