@@ -286,19 +286,19 @@ footer h4{
     @keyframes nav-mid{
     
         0% {   
-            left: -370px;
+            left: -333px;
             box-shadow: 0 0 0 0 rgba(150, 150, 150, 0.7);
         }
         40% {
-            left: -375px;
+            left: -338px;
         }
     
         70% {
-            left: -375px;
+            left: -338px;
             box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
         }
         100% {
-            left: -370px;
+            left: -333px;
             box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
         }
     }
