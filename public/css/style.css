@@ -237,20 +237,31 @@ footer h4{
         background: none;
     }
 
-    /*header .wrapper nav a {
-        padding: 40px 7px;
-        font-size: 13px;
+    header .wrapper{
+        display: flex;
+        width: 350px;
+    }
+    header .wrapper nav{
+        width: 100%;
     }
 
-    header .wrapper nav a.active-link {
+    header .wrapper nav a{
+        width: 100%;
+        padding: 20px 5px;
+        font-size: 14px;
+    }
+    header .wrapper nav a.active-link{
         font-size: 15px;
     }
-
-    header .wrapper nav a:hover {
-        font-size: 13px;
-        transition: 0.1s ease-in-out;
-    }*/
-
+    @keyframes nav-active{
+    
+        0% {   
+            left: -350px;
+        }
+        100% {
+            left: 10px;
+        }
+    }
 }
 
 
