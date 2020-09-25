@@ -452,6 +452,7 @@
     }
 
     .a-propos .wrapper .competences .content{
+        grid-template-columns: 1fr 1fr;
         gap: 10px;
     }
     .a-propos .wrapper .competences .content .box h2{
