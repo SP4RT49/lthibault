@@ -306,7 +306,7 @@ footer h4{
     @keyframes nav-active{
     
         0% {   
-            left: -375px;
+            left: -338px;
         }
         100% {
             left: 0px;
