@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="public/css/style.css">
-    <script type="text/javascript" src="public/js/typing-text.js"></script>
+    <script type="text/javascript" src="public/js/auto-text.js"></script>
     <script type="text/javascript" src="public/js/nav-anime.js"></script>
     <script type="text/javascript" src="public/js/exp-cont-show.js"></script>
     <title>SP4RT4</title>
@@ -173,11 +173,8 @@
                                 <div class="profil">
                                     <img id="photo" src="public/img/Thibault.png" >
                                     <h2>Thibault <span>Letourneur</span></h2>
-                                    <h3>>
-                                        <span
-                                        class="txt-rotate"
-                                        data-period="2000"
-                                        data-rotate='[ "Développeur Web", "Apprenti node.js", "Passioné de Dessin" ]'></span> 
+                                    <h3 class="auto-text">>
+                                        <span class="txt-rotate" data-period="2500" data-rotate='[ "Developpeur Web", "Apprenti Node.js", "Etudie en Alternance" ]'></span>
                                     </h3>
                                 </div>
                                 <div class="description"> 
@@ -294,30 +291,28 @@
                 </section>
 
                 <section class="contacter" id="contacter">
-                    <div class="content">
-                        <h2>Me Contacter</h2>
-                        <p>Description</p>
-                    </div>
                     <div class="container">
                         <div class="contact_info">
+                            <div class="content">
+                                <h2>Me Contacter</h2>
+                            </div>
                             <div class="box">
-                                <div class="icon"></div>
                                 <div class="text">
-                                    <h3>Titre</h3>
-                                    <p>Descri iiiiiiiiiii iiiiiiiiiiiiiii iiiiiiiiiiiiii<br>lien</p>
+                                    <h3>Informations :</h3>
+                                    <p>Je suis actuellement à la recherche d'une entreprise pour de l'alternance dans le développement Web et Web Mobile pour une durée de 5 mois.</p>
+                                    
                                 </div>
                             </div>
                             <div class="box">
-                                <div class="icon"></div>
                                 <div class="text">
-                                    <h3>Email</h3>
-                                    <p>lien</p>
+                                    <h3>Création de Site :</h3>
+                                    <p>Veillez à bien expliquer votre demande et détailler au mieux le type de design souhaité.</p>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="contactForm">
-                            <form id="contact-form" action="index.html#contacter">
+                            <form id="contact-form" action="/index.html">
                                 <h2>Envoyer un Message</h2>
                                 <div class="inputBox">
                                     <input type="hidden" name="contact_number">
@@ -335,7 +330,7 @@
                                     <span>Votre Message</span>
                                 </div>
                                 <div class="inputBox">
-                                    <input type="submit" value="Send">
+                                    <input type="submit" value="Envoyer">
                                 </div>
                             </form>
                         </div>
@@ -344,15 +339,6 @@
                             (function(){
                             emailjs.init('user_t1L8BKwOoAo5OmWQiq57d');
                             })();
-                        </script>
-                        <script type="text/javascript">
-                            window.onload = function() {
-                                document.getElementById('contact-form').addEventListener('submit', function(event) {
-                                    event.preventDefault();
-                                    this.contact_number.value = Math.random() * 100000 | 0;
-                                    emailjs.sendForm('contact_service', 'contact_form', this);
-                                });
-                            }
                         </script>
                         
                     </div>

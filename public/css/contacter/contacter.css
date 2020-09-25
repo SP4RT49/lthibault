@@ -1,7 +1,10 @@
 .contacter{
     position: relative;
-    min-height: 100vh;
+    min-height: 50vh;
     padding: 50px 100px;
+    background-image: url("https://wallpaperset.com/w/full/e/2/9/377777.jpg");
+    background-position: center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,12 +14,13 @@
 .contacter .content{
     max-width: 800px;
     text-align: center;
+    
 }
 
 .contacter .content h2{
     font-size: 36px;
     font-weight: 500;
-    color: rgb(0, 0, 0);
+    color: whitesmoke;
 }
 
 .contacter .content p{
@@ -26,21 +30,27 @@
 
 .container{
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
 }
 
 .container .contact_info{
-    width: 50%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  
+    background: rgba(51, 51, 51, 0.192);
+    box-shadow: inset -1px -1px 9px#333,
+                inset 1px 1px 9px#333;
+    border-radius: 20px;
+    transition: .5s ease-in-out;
 }
 
 .container .contact_info .box{
     position: relative;
-    padding: 20px 0;
+    padding: 0 0 20px 0;
     display: flex;
 }
 
@@ -48,28 +58,45 @@
     display: flex;
     margin-left: 20px;
     font-size: 16px;
-    color: rgb(156, 19, 19);
+    color: rgb(206, 113, 113);
     flex-direction: column;
     font-weight: 500;
+    transition: .5s ease-in-out;
 }
 
 .container .contact_info .box .text h3{
-    font-weight: 700;
-    color: green;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: whitesmoke;
+    transition: .5s ease-in-out;
+}
+
+.container .contact_info:hover {
+    background: rgba(223, 223, 223, 0.192);
+   
+}
+
+.container .contact_info:hover .box .text{        
+    color: #333;
+}
+
+.container .contact_info:hover .box .text h3{
+    color: rgb(255, 255, 255);
 }
 
 .contactForm{
-    width: 40%;
     padding: 40px;
-    background: #F0DFD6;
-    box-shadow: 1px 1px 9px#333;
+    box-shadow: inset -1px -1px 9px#333,
+                inset 1px 1px 9px#333;
     border-radius: 20px;
+    background: rgba(51, 51, 51, 0.192);
 }
 
 .contactForm h2{
     font-size: 30px;
-    color: #333;
+    color: rgb(255, 255, 255) ;
     font-weight: 500;
+    text-shadow: inset 1px 1px 5px #333;
 }
 
 .contactForm .inputBox{
@@ -87,6 +114,8 @@
     border: none;
     border-radius: 5px;
     border-bottom: 2px solid #333;
+    box-shadow: inset 1px 1px 5px#333;
+    background: rgba(226, 223, 223, 0.178);
     outline: none;
     resize: none;
 }
@@ -99,14 +128,14 @@
     margin: 10px 0;
     pointer-events: none;
     transition: .5s;
-    color: #666;
+    color: #333;
 }
 
 .contactForm .inputBox input:focus ~ span,
 .contactForm .inputBox input:valid ~ span,
 .contactForm .inputBox textarea:focus ~ span,
 .contactForm .inputBox textarea:valid ~ span{
-    color: #e91e63;
+    color: #1b1b1a;
     font-size: 12px;
     transform: translateY(-20px);
 }
@@ -126,6 +155,7 @@
         padding: 50px;
     }
     .container{
+        display: flex;
         flex-direction: column;
     }
     .container .contact_info{

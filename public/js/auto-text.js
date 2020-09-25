@@ -51,6 +51,13 @@ var TxtRotate = function(el, toRotate, period) {
     // INJECT CSS
     var css = document.createElement("style");
     css.type = "text/css";
-    css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+    css.innerHTML = ".txt-rotate > .wrap { 10px; border-right: 0.08em solid #009966 }";
     document.body.appendChild(css);
+
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        this.contact_number.value = Math.random() * 100000 | 0;
+        emailjs.sendForm('contact_service', 'contact_form', this);
+    });
   };
+  

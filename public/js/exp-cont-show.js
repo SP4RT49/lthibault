@@ -1,5 +1,17 @@
 
 
+
+function reset(){
+
+    var nom = "";
+    var mail = "";
+    var msg = "";
+
+    
+
+
+}
+
 //SECTION DU PROFIL OU CHOIX "THIBAULT" ou "DEV"
 
 function GameurImg(){
@@ -46,9 +58,11 @@ function tDev(){
 
 function text1(){
 
-    var n = "<h1>Titre 1</h1>";
+    var n = "<h1>DraftBot</h1>";
 
-    var d = "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>";
+    var d = "<p>DraftBot est un bot qui a été créé en node.js sur la plateforme Discord</p>"
+            +"<p>Il dispose de toutes les fonctionnalités nécessaires à la conception d'un serveur Discord complet ainsi qu'à sa gestion."
+            +"<p>Effectivement DraftBot permet la création de catégories, de canaux, de rôles mais aussi la création de message textuel simple ou sous forme d'embed de façons automatique que l'on peut modifier à tout moment et de façon assez rapide via le pannel web mis à disposition </p>";
 
 
     document.getElementById("nom").innerHTML = n;
