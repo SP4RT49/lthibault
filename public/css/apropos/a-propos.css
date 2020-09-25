@@ -406,6 +406,64 @@
     } .a-propos .wrapper .Titre h1{
         font-size: 25px;
     }
+
+    .a-propos .wrapper .informations #photo{
+        margin-top: 15px;
+        width: 60%;
+        height: 60%;
+    }
+
+    .a-propos .wrapper .informations .profil h2{
+        font-size: 20px;
+    }
+
+    .a-propos .wrapper .informations .profil h3{
+        font-size: 13px;
+        width:  150px;
+    }
+
+    .a-propos .wrapper .informations .description{
+        padding-top: 0;
+    }
+
+    .a-propos .wrapper .informations .description .bchoix{
+        margin: 0;
+    }
+
+    .textDiv{
+        width: 100%;
+    }
+
+    .a-propos .wrapper .informations .description .textDiv h3{
+        font-size: 18px;
+        width: 95px;
+    }
+    .a-propos .wrapper .informations .description .textDiv p{
+        font-size: 14px;
+        text-align: initial;
+        padding: 10px 20px;
+    }
+    .textDiv span.sTitre{
+        font-size: 16px;
+    }
+
+    .a-propos .wrapper .competences{
+        padding: 50px 12px;
+    }
+
+    .a-propos .wrapper .competences .content{
+        gap: 10px;
+    }
+    .a-propos .wrapper .competences .content .box h2{
+        margin-top: 10px;
+        font-size: 16px;
+        text-align: center;
+    }
+    .a-propos .wrapper .competences .content .box p{
+        margin: 10px 10px;
+    }
+
+
 }
 
 
