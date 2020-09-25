@@ -223,9 +223,21 @@ footer h4{
         max-width: 479px;
     }
 
-
-
-    /*------------  -------------- */
+    header.sticky, header.sticky2  {
+        background: #252525d7;  
+        left: 0px;     
+    }
+    header.sticky .wrapper nav a, header.sticky2 .wrapper nav a{
+        color: #F0DFD6;
+        width: 100%;
+        padding: 20px 5px;
+        font-size: 14px;
+    }
+    header.sticky .wrapper nav a.active-link {
+        font-size: 15px;
+        color: #e7c0aa;
+        font-weight: 500;
+    }
 
 
 }
@@ -253,10 +265,35 @@ footer h4{
     header .wrapper nav a.active-link{
         font-size: 15px;
     }
+    
+    header.sticky, header.sticky2  {
+        background: #252525d7;
+    }
+
+    @keyframes nav-mid{
+    
+        0% {   
+            left: -360px;
+            box-shadow: 0 0 0 0 rgba(150, 150, 150, 0.7);
+        }
+        40% {
+            left: -370px;
+        }
+    
+        70% {
+            left: -370px;
+            box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
+        }
+        100% {
+            left: -360px;
+            box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+        }
+    }
+
     @keyframes nav-active{
     
         0% {   
-            left: -350px;
+            left: -370px;
         }
         100% {
             left: 10px;
