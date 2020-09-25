@@ -251,7 +251,9 @@ footer h4{
 
     header .wrapper{
         display: flex;
-        width: 350px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
     header .wrapper nav{
         width: 100%;
@@ -270,22 +272,26 @@ footer h4{
         background: #252525d7;
     }
 
+    header.sticky:hover{
+        left: 0;
+    }
+
     @keyframes nav-mid{
     
         0% {   
-            left: -360px;
+            left: -370px;
             box-shadow: 0 0 0 0 rgba(150, 150, 150, 0.7);
         }
         40% {
-            left: -370px;
+            left: -375px;
         }
     
         70% {
-            left: -370px;
+            left: -375px;
             box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
         }
         100% {
-            left: -360px;
+            left: -370px;
             box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
         }
     }
@@ -293,10 +299,10 @@ footer h4{
     @keyframes nav-active{
     
         0% {   
-            left: -370px;
+            left: -375px;
         }
         100% {
-            left: 10px;
+            left: 0px;
         }
     }
 }
