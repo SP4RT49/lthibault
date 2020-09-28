@@ -14,8 +14,8 @@
     box-sizing: border-box;
     transition: background .5s linear;
 }
-.c-white{
-    background: whitesmoke;
+.container-white{
+    background: #F0DFD6;
 }
 
 /* A.1 : Barre de navigation */
@@ -27,6 +27,10 @@
     background: #181A1B;
     padding: 0 60px;
     box-sizing: border-box;
+    transition: background .5s linear;
+}
+.navbar-white{
+    background: #d8b7a4;
 }
 
 /* A.1.a : logo gauche */
@@ -173,6 +177,10 @@
     font-size: 80px;
     font-weight: 800;
     margin: 10px 0;
+    transition: color .5s linear;
+}
+.msg-col-white h1{
+    color: rgb(34, 33, 33);
 }
 
 .msg-col p{
@@ -223,15 +231,19 @@
 
 /* Contenu div 1 */
 .msg1{
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
 .msg-container .msg-col .avatar{
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .msg-container .msg-col .avatar img{
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     border-radius: 60px;
 }
 

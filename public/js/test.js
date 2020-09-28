@@ -1,4 +1,4 @@
-window.onload = function(){
+window.onload = function(){ //bouton switch light / dark
 const checkbox = document.getElementById('checkbox');
 
 
@@ -17,12 +17,26 @@ function checkMode(){
 }
 
 function darkModeOn(){
-    document.getElementById('container').classList.add("c-white");
+    document.getElementById('container').classList.add("container-white"); //fond du site
+    document.getElementById('navbar').classList.add("navbar-white"); // Fond navbar top
+
+    document.getElementById('gtitre').classList.add("msg-col-white"); // couleur des Gros Titre div A propos
+    document.getElementById('gtitre1').classList.add("msg-col-white"); // couleur des Gros Titre div Compétences
+    document.getElementById('gtitre2').classList.add("msg-col-white"); // couleur des Gros Titre div Prestations
+    document.getElementById('gtitre3').classList.add("msg-col-white"); // couleur des Gros Titre div Contacter
 }
 
 function darkModeOff(){
-    document.getElementById('container').classList.remove("c-white");
+    document.getElementById('container').classList.remove("container-white");
+    document.getElementById('navbar').classList.remove("navbar-white");
+
+    document.getElementById('gtitre').classList.remove("msg-col-white"); 
+    document.getElementById('gtitre1').classList.remove("msg-col-white");
+    document.getElementById('gtitre2').classList.remove("msg-col-white");
+    document.getElementById('gtitre3').classList.remove("msg-col-white");
 }
+
+
 
 
 // Barre de controle Div de droite
@@ -33,7 +47,6 @@ function darkModeOff(){
     var line2 = document.getElementById('line2');
     var line3 = document.getElementById('line3');
     var line4 = document.getElementById('line4');
-    var line5 = document.getElementById('line5');
 
     line1.onclick = function(){
         slider.style.transform = 'translateY(0)';
