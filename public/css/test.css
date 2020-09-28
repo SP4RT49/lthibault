@@ -253,6 +253,7 @@
     top: 110px;
     left: 1100px;
     display: flex;
+    z-index: 10;
 }
 
 .msg-col .bchoix label.boutons{
