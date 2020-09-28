@@ -36,19 +36,19 @@ function darkModeOff(){
     var line5 = document.getElementById('line5');
 
     line1.onclick = function(){
-        slider.style.transform = 'translateX(0)';
+        slider.style.transform = 'translateY(0)';
         active.style.top ='0px';
     }
     line2.onclick = function(){
-        slider.style.transform = 'translateX(-25%)';
+        slider.style.transform = 'translateY(-25%)';
         active.style.top ='80px';
     }
     line3.onclick = function(){
-        slider.style.transform = 'translateX(-50%)';
+        slider.style.transform = 'translateY(-50%)';
         active.style.top ='160px';
     }
     line4.onclick = function(){
-        slider.style.transform = 'translateX(-75%)';
+        slider.style.transform = 'translateY(-75%)';
         active.style.top ='240px';
     }
 
@@ -56,28 +56,28 @@ function darkModeOff(){
     var apropos = document.getElementById('apropos')
 
     apropos.onclick = function(){
-        slider.style.transform = 'translateX(0)';
+        slider.style.transform = 'translateY(0)';
         active.style.top ='0px';
     }
 
     var Compétences = document.getElementById('Compétences')
 
     Compétences.onclick = function(){
-        slider.style.transform = 'translateX(-25%)';
+        slider.style.transform = 'translateY(-25%)';
         active.style.top ='80px';
     }
 
     var Prestations = document.getElementById('Prestations')
 
     Prestations.onclick = function(){
-        slider.style.transform = 'translateX(-50%)';
+        slider.style.transform = 'translateY(-50%)';
         active.style.top ='160px';
     }
 
     var Contacter = document.getElementById('Contacter')
 
     Contacter.onclick = function(){
-        slider.style.transform = 'translateX(-75%)';
+        slider.style.transform = 'translateY(-75%)';
         active.style.top ='240px';
     }
 

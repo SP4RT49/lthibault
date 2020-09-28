@@ -254,7 +254,8 @@
 }
 
 #slider{
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
     transition: .5s;
 }
 
@@ -332,8 +333,8 @@
 /* Contenu div 1 : Boutons choix d'informations à propos */
 .msg-col .bchoix {
     position: absolute;
-    top: 40px;
-    left: 1000px;
+    top: 110px;
+    left: 1100px;
     display: flex;
 }
 
