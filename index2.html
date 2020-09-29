@@ -18,7 +18,7 @@
                 </div>
                 <nav>
                     <ul>
-                        <label><input type="radio" id="apropos"><h2 class="titre-div">À propos</h2></label>
+                        <label id="label1"><input type="radio" id="apropos"><h2 class="titre-div">À propos</h2></label>
                         <label><input type="radio" id="Compétences"><h2 class="titre-div">Compétences</h2></label>
                         <label><input type="radio" id="Prestations"><h2 class="titre-div">Prestations</h2></label>
                         <label><input type="radio" id="Contacter"><h2 class="titre-div">Contacter</h2></label>
@@ -33,7 +33,9 @@
             <div class="msg-container">
                 <div id="slider">
                     <div class="msg-col" id="gtitre">
-                        <h1>À Propos</h1>
+                        <div class="fond-titre" id="fond-titre">
+                            <h1>À Propos</h1>
+                        </div>
                         <div class="bchoix">
                             <label class="boutons">
                                 <input type="radio" name="bc1" class="btn" onclick="tgameur()">
@@ -57,7 +59,9 @@
                     </div>
 
                     <div class="msg-col" id="gtitre1">
-                        <h1>Compétences</h1>
+                        <div class="fond-titre" id="fond-titre">
+                            <h1>Compétences</h1>
+                        </div>
                         <div class="competences">
                             <div class="content">
                                 <a href="https://www.pierre-giraud.com/html-css-apprendre-coder-cours/definition-utilisation/" class="box" target="_blank">
@@ -96,7 +100,9 @@
                     </div>
 
                     <div class="msg-col" id="gtitre2">
-                        <h1>Prestations</h1>
+                        <div class="fond-titre" id="fond-titre">
+                            <h1>Prestations</h1>
+                        </div>
                         <div class="infsup_cont">
                             <div class="head">
                                 <div class="titre">
@@ -207,7 +213,9 @@
                     </div>
 
                     <div class="msg-col" id="gtitre3">
-                        <h1>Contacter</h1>
+                        <div class="fond-titre" id="fond-titre">
+                            <h1>Contacter</h1>
+                        </div>
                         <section class="contacter" id="contacter">
                             <div class="ccontainer">
                                 <div class="contact_info">
@@ -229,7 +237,7 @@
                                     </div>
                                 </div>
                                 
-                                <div class="contactForm">
+                                <div class="contactForm" id="mail">
                                     <form id="contact-form" action="/index.html">
                                         <h2>Envoyer un Message</h2>
                                         <div class="inputBox">

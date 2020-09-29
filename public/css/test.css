@@ -31,7 +31,9 @@
 }
 .navbar-white{
     background: #d8b7a4;
+    box-shadow: inset 0px 1px 10px #181A1B;
 }
+
 
 /* A.1.a : logo gauche */
 .navbar .logo {
@@ -53,7 +55,12 @@
     display: inline-block;
     color: #fff;
     margin-right: 60px;
+    transition: color .2s;
 }
+.navbar-white nav ul label{
+    color: #553b2b;
+}
+
 .navbar nav ul li a{
     display: inline-block;
     text-decoration: none;
@@ -87,6 +94,9 @@
     bottom: 5px;
     transition: width .2s;
 }
+.navbar-white nav ul label h2.titre-div:before{
+    background:#553b2b;
+}
 .navbar nav ul label h2.titre-div:hover:before{
     width: 90px;
 }
@@ -113,7 +123,7 @@
     transition: .3s ease-in-out;
 }
 .navbar input[type="checkbox"]:checked ~ .check{
-    background: #fff;
+    background: #F0DFD6;
 }
 
 .navbar .check:before{
@@ -128,7 +138,7 @@
     transition: .5s;
 }
 .navbar input[type="checkbox"]:checked ~ .check:before{
-    transform: translateX(-50px);
+    transform: translateX(-40px);
 }
 
 .navbar .check:after{
@@ -172,9 +182,58 @@
     height: calc(100vh - 250px);
 }
 
+.msg-col .fond-titre{
+    position: relative;
+    margin-bottom: 30px;
+    color: #fff;
+    background: #181A1B;
+    text-align: center;
+    border-radius: 50px 10px;
+}
+.msg-col .fond-titre:before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 20px solid #181A1B;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.msg-col-white .fond-titre{
+    position: relative;
+    color: #fff;
+    background: #D8B7A4;
+    text-align: center;
+}
+.msg-col-white .fond-titre:before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 20px solid #D8B7A4;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+
 .msg-col h1{
     color: #fff;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 800;
     margin: 10px 0;
     transition: color .5s linear;
@@ -250,7 +309,7 @@
 /* Contenu div 1 : Boutons choix d'informations à propos */
 .msg-col .bchoix {
     position: absolute;
-    top: 110px;
+    top: 150px;
     left: 1100px;
     display: flex;
     z-index: 10;
@@ -273,7 +332,8 @@
     display: inline-block;
     text-decoration: none;
     color: #181A1B;
-    background: #fff;
+    background: #D8B7A4;
+    box-shadow: inset -1px -1px #7e6150;
     font-size: 15px;
     padding: 10px 25px;
     border-radius: 35px;
@@ -284,7 +344,8 @@
     display: inline-block;
     text-decoration: none;
     color: #181A1B;
-    background: #fff;
+    background: #D8B7A4;
+    box-shadow: inset -1px -1px #7e6150;
     font-size: 15px;
     padding: 10px 25px;
     border-radius: 35px;
@@ -912,11 +973,15 @@
 .msg-col .contacter .ccontainer .contact_info:hover .box .text h3{
     color: rgb(255, 255, 255);
 }
+.msg-col .contacter .ccontainer .contact_info:hover .box .text p{
+    color: rgb(27, 26, 26);
+    transition: .5s;
+}
 
 .contactForm{
     padding: 40px;
-    box-shadow: inset -1px -1px 9px#333,
-                inset 1px 1px 9px#333;
+    box-shadow: inset -1px -1px 9px #333,
+                inset 1px 1px 9px #333;
     border-radius: 20px;
     background: rgba(51, 51, 51, 0.192);
 }
@@ -943,7 +1008,7 @@
     border: none;
     border-radius: 5px;
     border-bottom: 2px solid #333;
-    box-shadow: inset 1px 1px 5px#333;
+    box-shadow: inset 1px 1px 5px #333;
     background: rgba(226, 223, 223, 0.178);
     outline: none;
     resize: none;
@@ -951,12 +1016,16 @@
 
 .contactForm .inputBox span{
     position: absolute;
+    top: 0;
     left: 5px;    
     padding: 5px 0;
     font-size: 16px;
     margin: 10px 0;
     pointer-events: none;
     transition: .5s;
+    color: #fff;
+}
+.contactForm-white .inputBox span{
     color: #333;
 }
 
@@ -964,9 +1033,16 @@
 .contactForm .inputBox input:valid ~ span,
 .contactForm .inputBox textarea:focus ~ span,
 .contactForm .inputBox textarea:valid ~ span{
-    color: #1b1b1a;
+    color: rgba(255, 255, 255, 0.527);
     font-size: 12px;
     transform: translateY(-20px);
+}
+
+.contactForm-white .inputBox input:focus ~ span,
+.contactForm-white .inputBox input:valid ~ span,
+.contactForm-white .inputBox textarea:focus ~ span,
+.contactForm-white .inputBox textarea:valid ~ span{
+    color: #1b1b1a;
 }
 
 .contactForm .inputBox input[type="submit"]{
