@@ -9,14 +9,14 @@ function checkMode(){
     console.log('checking...');
     if(checkbox.checked){
         console.log('white on');
-        darkModeOn();
+        whiteModeOn();
     } else {
         console.log('white off');
-        darkModeOff();
+        whiteModeOff();
     }
 }
 
-function darkModeOn(){
+function whiteModeOn(){
     document.getElementById('container').classList.add("container-white"); //fond du site
     document.getElementById('navbar').classList.add("navbar-white"); // Fond navbar top
 
@@ -31,7 +31,7 @@ function darkModeOn(){
     document.getElementById('mail').classList.add("contactForm-white"); // couleur span Mail contacter
 }
 
-function darkModeOff(){
+function whiteModeOff(){
     document.getElementById('container').classList.remove("container-white");
     document.getElementById('navbar').classList.remove("navbar-white");
 
