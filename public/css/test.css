@@ -489,6 +489,10 @@
 
 /* Contenu div 3 : PRESTATIONS */
 
+.cont-infos{
+    width: 100%;
+}
+
 .infsup_cont{
     max-width: 1200px;
     width: 100%;
@@ -1072,4 +1076,103 @@
     cursor: pointer;
     padding: 10px;
     font-size: 18px;
+}
+
+@media (max-height: 720px){
+    .msg-col{
+        height: 100vh;
+    }
+    .textDiv{
+        margin-top: 0;
+    }
+    .textDiv h3{
+        margin-right: 0;
+    }
+    .msg-col .bchoix{
+        margin-left: 35%;
+    }
+    .textDiv p{
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+    .msg-col .competences .content{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .msg-col .competences .content .box{
+        width: 150px;
+    }
+    .msg-col .competences .content .box h2{
+        text-align: center;
+    }
+
+    .cont-infos{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 20px;
+    }
+    .infsup_cont .cont_elem{
+        gap: 10px;
+    }
+
+    .infsup_cont .head .titre h3{
+        width: 320px;
+    }
+    .infsup_cont .footer{
+        margin-left: 20px;
+    }.infsup_cont .button{
+        width: 100px;
+
+    }
+
+
+    .infsup_cont .card .content{
+        position: relative;
+        width: 100%;
+    }.infsup_cont .card .content h3{
+        font-size: 20px;
+    }.infsup_cont .card .content p{
+        font-size: 14px;
+    }
+
+    .infend_cont .cont_elem{
+        gap: 10px;
+    }
+
+    .infend_cont .head .titre h3{
+        width: 320px;
+    }
+    .infend_cont .footer{
+        margin-left: 20px;
+    }.infend_cont .button{
+        width: 130px;
+        padding: 0 15px;
+
+    }.infend_cont .button span{
+        font-size: 16px;
+    }
+
+    .infend_cont .card .content{
+        position: relative;
+        width: 100%;
+    }.infend_cont .card .content h3{
+        font-size: 20px;
+    }.infend_cont .card .content p{
+        font-size: 14px;
+    }
+
+
+
+
+    .msg-col .contacter{
+        padding: 0;
+    }.msg-col .contacter .ccontainer{
+        margin-top: 10px;
+    }
+
+    .contactForm{
+        padding: 5px 30px;
+    }
 }
