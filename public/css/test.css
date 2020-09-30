@@ -1126,6 +1126,12 @@
         width: 100px;
 
     }
+    .infsup_cont .card:hover .imbox{
+        width: 0;
+        height: 0;
+        top: 50%;
+        left: 50%;
+    }
 
 
     .infsup_cont .card .content{
@@ -1154,25 +1160,37 @@
         font-size: 16px;
     }
 
-    .infend_cont .card .content{
-        position: relative;
-        width: 100%;
-    }.infend_cont .card .content h3{
-        font-size: 20px;
-    }.infend_cont .card .content p{
-        font-size: 14px;
+
+    .infend_cont .card:hover .imbox{
+        width: 0;
+        height: 0;
+        top: 50%;
+        left: 50%;
+        }
+    
+        .infend_cont .card .content{
+            position: relative;
+            width: 100%;
+        }.infend_cont .card .content h3{
+            font-size: 20px;
+        }.infend_cont .card .content p{
+            font-size: 14px;
+        }
+    
+    
+    
+    
+        .msg-col .contacter{
+            padding: 0;
+        }.msg-col .contacter .ccontainer{
+            margin-top: 10px;
+        }
+    
+        .contactForm{
+            padding: 5px 30px;
+        }
     }
+    
 
-
-
-
-    .msg-col .contacter{
-        padding: 0;
-    }.msg-col .contacter .ccontainer{
-        margin-top: 10px;
-    }
-
-    .contactForm{
-        padding: 5px 30px;
-    }
 }
+    
