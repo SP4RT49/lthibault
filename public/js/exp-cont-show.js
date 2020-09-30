@@ -21,6 +21,7 @@ function GameurImg(){
 
 function tgameur(){
 
+    
     var n3 = "<h3>Thibault</h3>";
         
     var d3 = '<p><span class="sTitre">Passionné :</span><br>'
@@ -31,7 +32,8 @@ function tgameur(){
 
         
         
-    document.querySelector(".textDiv").innerHTML = n3 + d3;
+    document.querySelector(".ttitre").innerHTML = n3;
+    document.querySelector(".tdescri").innerHTML = d3;
 }
 
 function DevImg(){
@@ -49,7 +51,8 @@ function tDev(){
 
         
         
-    document.querySelector(".textDiv").innerHTML = nD + dD;
+    document.querySelector(".ttitre").innerHTML = nD;
+    document.querySelector(".tdescri").innerHTML = dD;
 }
 
 
