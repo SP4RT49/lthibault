@@ -1078,7 +1078,7 @@
     font-size: 18px;
 }
 
-@media (max-height: 720px){
+@media (max-height: 750px){
     .msg-col{
         height: 100vh;
     }
