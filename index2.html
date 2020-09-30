@@ -1,299 +1,355 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="public/css/test.css">
-    <script type="text/javascript" src="public/js/test.js" charset="utf-8"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="public/css/style.css">
+    <script type="text/javascript" src="public/js/auto-text.js"></script>
+    <script type="text/javascript" src="public/js/nav-anime.js"></script>
     <script type="text/javascript" src="public/js/exp-cont-show.js"></script>
-    <script type="text/javascript" src="public/js/div-anim.js" charset="utf-8"></script>
-    <title>Page Test</title>
+    <title>SP4RT4</title>
+
 </head>
+
+
 <body>
-    <div class="container" id="container">
 
-            <div class="navbar" id="navbar">
-                <div class="logo">
-                    <img src="public/img/logodiscord.png" alt="logo">
-                </div>
-                <nav>
-                    <ul>
-                        <label id="label1"><input type="radio" id="apropos"><h2 class="titre-div">À propos</h2></label>
-                        <label><input type="radio" id="Compétences"><h2 class="titre-div">Compétences</h2></label>
-                        <label><input type="radio" id="Prestations"><h2 class="titre-div">Prestations</h2></label>
-                        <label><input type="radio" id="Contacter"><h2 class="titre-div">Contacter</h2></label>
-                    </ul>
-                </nav>
-                <label for="checkbox">
-                    <input type="checkbox" id="checkbox">
-                    <span class="check"></span>
-                </label>
-            </div>
-
-            <div class="msg-container">
-                <div id="slider">
-                    <div class="msg-col" id="gtitre">
-                        <div class="fond-titre" id="fond-titre">
-                            <h1>À Propos</h1>
+            <div class="contindex">
+                <section id="infos">
+                        
+                        <h1>
+                            THIBAULT <span>LETOURNEUR</span>
+                        </h1>
+                            <p> Passionné par la <span class="icolor">création graphique</span> ou <span class="icolor">conception de site web</span> en tout genre</p>
+                        <div class="infobox">
+                            <p> Développeur <span class="icolor">Web</span> et <span class="icolor">JavaScript</span> </p>
                         </div>
                         
-                        <div class="msg1" >
-                            <div class="avatar"><img src="public/img/Thibault.png" alt="Moi"></div>
-                            <div class="textDiv">
-                                <div class="smtt">
-                                    <h3 class="ttitre">Le Dev</h3>
-                                    <div class="bchoix">
-                                        <label class="boutons">
-                                            <input type="radio" name="bc1" class="btn" onclick="tgameur()">
-                                            <h2 class="bc1">Thibault</h2>
-                                        </label>
-                                        <label class="boutons">
-                                            <input type="radio" name="bc2" class="btn" onclick="tDev()">
-                                            <h2 class="bc2">Le Dev</h2>
-                                        </label>
+
+                        <header>
+
+                            <div class="wrapper">
+                                    <nav id="nav">
+                                        <a href="#infos-sup" title="Accueil"  class="active-link">Accueil</a>
+                                        <a href="#a-propos" title="À Propos" class>À Propos</a>
+                                        <a href="#experiences" title="Experiences" class>Experiences</a>
+                                        <a href="#contacter" title="Contacter" class>Contacter</a>
+                                    </nav>
+                            </div>
+                                                
+                        </header>
+                </section>
+                
+                <section id="infos-sup">
+                    
+                    <div class="infsup_cont">
+                        <div class="head">
+                            <div class="titre">
+                                <h3>
+                                    
+                                    Besoin d'un Site Web ?
+                                    
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="cont_elem">
+                            <div class="card">
+                                <div class="imbox" data-text="Un Design">
+                                    <img src="public/img/plan.png">
+                                </div>
+
+                                <div class="content">
+                                    <div>
+                                        <h3>Un Design</h3>
+                                        <p>Réfléchissons à un design qui vous représente et qui vous est propre !</p>
+                                        <a href="#">Lire Plus</a>
                                     </div>
                                 </div>
-                                <div class="tdescri">
-                                    <p>J'ai commencé le développement assez jeune, en commençant par de petits programmes .bat pour impressionner les copains à l'école, puis par du simple <span class="langage">HTML</span>/<span class="langage">CSS</span> pour me faire ma propre page d'accueil.</p>
-                                    <p>Aujourd'hui je pousse la chose un peu plus loin en m'essayant à divers langages en simultané, <span class="langage">HTML</span>/<span class="langage">CSS</span>/<span class="langage">PHP</span>/<span class="langage">Java</span> ainsi que du <span class="langage">node.js</span> notamment pour la création de bots Discord.</p>
-                                    <p>Actuellement etudiant et souhaitant un jour devenir Webmaster, suis à la recherche d'une entreprise pouvant m'accueillir pour de l'alternance</p>
+                            </div>
+
+                            <div class="card">
+                                <div class="imbox" data-text="Du Code">
+                                    <img src="public/img/data.png">
+                                </div>
+
+                                <div class="content">
+                                    <div>
+                                        <h3>Du Code</h3>
+                                        <p>Un code simple, ergonomique et facile à reprendre par la suite.</p>
+                                        <a href="#">Lire Plus</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>                        
-                    </div>
 
-                    <div class="msg-col" id="gtitre1">
-                        <div class="fond-titre" id="fond-titre">
-                            <h1>Compétences</h1>
-                        </div>
-                        <div class="competences">
-                            <div class="content">
-                                <a href="https://www.pierre-giraud.com/html-css-apprendre-coder-cours/definition-utilisation/" class="box" target="_blank">
-                                    <img alt="#" src="public/img/comp-htmlcss.jpg">                                        
-                                    <h2>HTML/CSS</h2>
-                                    <p>Langage que j'utilise depuis mes débuts avec depuis peu l'intégration du PHP</p>
-                                </a>
-                                <a href="https://developer.mozilla.org/fr/docs/Learn/JavaScript/First_steps/What_is_JavaScript" class="box" target="_blank">
-                                    <img alt="#" src="public/img/comp-js.jpg">
-                                    <h2>JavaScript</h2>
-                                    <p>Principalement pour faire des animations sur mes sites j'utilise également node.js</p>
-                                </a>
-                                <a href="https://www.figma.com/" class="box" target="_blank">
-                                    <img alt="#" src="public/img/comp-figma.jpg">
-                                    <h2>Figma</h2>
-                                    <p>Super outil de pré-production que j'utilise de plus en plus, pratique tant pour son côté collabortaif que par son utilsation ergonomique</p>
-                                </a>
-                                <a href="https://www.adobe.com/fr/products/illustrator.html?sdid=88X75SL1&mv=search&ef_id=CjwKCAjwwab7BRBAEiwAapqpTC6wrEr9kzhO_raFqUvW_u1YWK46e641eTmjgnrUAunbwBVVLXapcBoCQq4QAvD_BwE:G:s&s_kwcid=AL!3085!3!341240860982!e!!g!!adobe%20illustrator!1478148655!58836721084" class="box" target="_blank">
-                                    <img alt="#" src="public/img/comp-ai.jpg">
-                                    <h2>Adobe Illustrator</h2>
-                                    <p>Utilisé principalement dans la création d'icones ou de logos vectoriels</p>
-                                 </a>
-                                <a href="https://www.adobe.com/fr/products/photoshop.html?sdid=88X75SL1&mv=search&ef_id=CjwKCAjwwab7BRBAEiwAapqpTHWCYm3dKuOjJBA2uojuEN36X6XSb-1krYAyjav0omfb9hO1pWNcSxoC7WkQAvD_BwE:G:s&s_kwcid=AL!3085!3!341240721080!e!!g!!adobe%20photoshop!1435912275!56537390339" class="box" target="_blank">
-                                    <img alt="#" src="public/img/comp-ap.jpg">
-                                    <h2>Adobe Photoshop</h2>
-                                    <p>Je l'utilise depuis très longtemps autant pour du photo-montage que pour de la création graphique comme des logos, bannières ou de simples dessins</p>
-                                </a>
-                                <a href="https://git-scm.com/" class="box" target="_blank">
-                                    <img alt="#" src="public/img/comp-git.jpg">
-                                    <h2>Git</h2>
-                                    <p>Mon outil principal qui me permet de faciliter le travail à plusieurs sur un même projet</p>
-                                </a>
+                            <div class="card">
+                                <div class="imbox" data-text="Un Site Web">
+                                    <img src="public/img/graphic.png">
+                                </div>
+
+                                <div class="content">
+                                    <div>
+                                        <h3>Un Site Web</h3>
+                                        <p>Votre Site est fin prêt et il ne vous reste plus qu'à admirez le travail !</p>
+                                        <a href="#">Lire Plus</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        
+                        <div class="footer">
+                            <a href="#" class="button"> <span>Je veux !</span></a>
+
+                        </div>
+                    </div>
+                    <hr class="separateur" width="75%" color="#dd9f7e" >
+                </section>
+
+                <section id="infos-end">
+                    
+                    <div class="infend_cont">
+                        <div class="head">
+                            <div class="titre">
+                                <h3>Besoin d'un Logo ?</h3>
+                            </div>
+                        </div>
+                        <div class="cont_elem">
+                            <div class="card">
+                                <div class="imbox" data-text="Une Idée">
+                                    <img src="public/img/idea.png">
+                                </div>
+
+                                <div class="content">
+                                    <div>
+                                        <h3>Une Idée</h3>
+                                        <p>Parce qu'un logo part toujours d'une ou plusieurs idées !</p>
+                                        <a href="#">Lire Plus</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="imbox" data-text="Un Croquis">
+                                    <img src="public/img/drawing.png">
+                                </div>
+
+                                <div class="content">
+                                    <div>
+                                        <h3>Un Croquis</h3>
+                                        <p>Un petit gribouillit ou trois traits fait à la va vite peuvent donner un exemple.</p>
+                                        <a href="#">Lire Plus</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="imbox" data-text="Un Logo">
+                                    <img src="public/img/drawlogo.png">
+                                </div>
+
+                                <div class="content">
+                                    <div>
+                                        <h3>Un Logo</h3>
+                                        <p>Un dessin travaillé qui pourra désormais vous représenter !</p>
+                                        <a href="#">Lire Plus</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <a href="#" class="button"> <span>Pourquoi pas !</span></a>
+
+                        </div>
                     </div>
 
-                    <div class="msg-col" id="gtitre2">
-                        <div class="fond-titre" id="fond-titre">
-                            <h1>Prestations</h1>
-                        </div>
-                        <div class="infsup_cont">
-                            <div class="head">
-                                <div class="cont-titre">
+                </section>
+
+                <section id="a-propos">
+                    <div class="a-propos">
+                        <div class="wrapper">  
+                            <div class="Titre">
+                                <h1>À Propos</h1>
+                            </div>
+                            <div class="informations">
+                                <div class="profil">
+                                    <img id="photo" src="public/img/Thibault.png" >
+                                    <h2>Thibault <span>Letourneur</span></h2>
+                                    <h3 class="auto-text">>
+                                        <span class="txt-rotate" data-period="2500" data-rotate='[ "Developpeur Web", "Apprenti Node.js", "Etudie en Alternance" ]'></span>
+                                    </h3>
+                                </div>
+                                <div class="description"> 
+                                        <div class="bchoix">
+                                            <label class="boutons">
+                                                <input type="radio" name="age" class="btn" onclick="GameurImg() + tgameur()">
+                                                <h2 class="tb2">Thibault</h2>
+                                            </label>
+                                            <label class="boutons">
+                                                <input type="radio" name="age" class="btn" onclick="DevImg() + tDev()">
+                                                <h2 class="tb1">Le Dev</h2>
+                                            </label>
+                                        </div>
+                                                                        
+                                    <div class="textDiv">
+                                        <h3>Le Dev</h3>
+                                        <p>J'ai commencé le développement assez jeune, en commençant par de petits programmes .bat pour impressionner les copains à l'école, puis par du simple <span class="langage">HTML</span>/<span class="langage">CSS</span> pour me faire ma propre page d'accueil.</p>
+                                        <p>Aujourd'hui je pousse la chose un peu plus loin en m'essayant à divers langages en simultané, <span class="langage">HTML</span>/<span class="langage">CSS</span>/<span class="langage">PHP</span>/<span class="langage">Java</span> ainsi que du <span class="langage">node.js</span> notamment pour la création de bots Discord.</p>
+                                        <p>Actuellement etudiant et souhaitant un jour devenir Webmaster, suis à la recherche d'une entreprise pouvant m'accueillir pour de l'alternance</p>
+                            
+                                    </div>
+        
+                                </div>
+
+                                        
+                            </div>
+
+                            <div class="competences">
+                                <h1 class="titre">Compétences</h1>
+                                <div class="content">
+                                    <a href="https://www.pierre-giraud.com/html-css-apprendre-coder-cours/definition-utilisation/" class="box" target="_blank">
+                                        <img alt="#" src="public/img/comp-htmlcss.jpg">                                        
+                                        <h2>HTML/CSS</h2>
+                                        <p>Langage que j'utilise depuis mes débuts avec depuis peu l'intégration du PHP</p>
+                                        <div class="skill">
+                                            <div class="skill_level"></div>
+                                        </div>
+                                    </a>
+                                    <a href="https://developer.mozilla.org/fr/docs/Learn/JavaScript/First_steps/What_is_JavaScript" class="box" target="_blank">
+                                        <img alt="#" src="public/img/comp-js.jpg">
+                                        <h2>JavaScript</h2>
+                                        <p>Principalement pour faire des animations sur mes sites j'utilise également node.js</p>
+                                        <div class="skill">
+                                            <div class="skill_level"></div>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.figma.com/" class="box" target="_blank">
+                                        <img alt="#" src="public/img/comp-figma.jpg">
+                                        <h2>Figma</h2>
+                                        <p>Super outil de pré-production que j'utilise de plus en plus, pratique tant pour son côté collabortaif que par son utilsation ergonomique</p>
+                                        <div class="skill">
+                                            <div class="skill_level"></div>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.adobe.com/fr/products/illustrator.html?sdid=88X75SL1&mv=search&ef_id=CjwKCAjwwab7BRBAEiwAapqpTC6wrEr9kzhO_raFqUvW_u1YWK46e641eTmjgnrUAunbwBVVLXapcBoCQq4QAvD_BwE:G:s&s_kwcid=AL!3085!3!341240860982!e!!g!!adobe%20illustrator!1478148655!58836721084" class="box" target="_blank">
+                                        <img alt="#" src="public/img/comp-ai.jpg">
+                                        <h2>Adobe Illustrator</h2>
+                                        <p>Utilisé principalement dans la création d'icones ou de logos vectoriels</p>
+                                        <div class="skill">
+                                            <div class="skill_level"></div>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.adobe.com/fr/products/photoshop.html?sdid=88X75SL1&mv=search&ef_id=CjwKCAjwwab7BRBAEiwAapqpTHWCYm3dKuOjJBA2uojuEN36X6XSb-1krYAyjav0omfb9hO1pWNcSxoC7WkQAvD_BwE:G:s&s_kwcid=AL!3085!3!341240721080!e!!g!!adobe%20photoshop!1435912275!56537390339" class="box" target="_blank">
+                                        <img alt="#" src="public/img/comp-ap.jpg">
+                                        <h2>Adobe Photoshop</h2>
+                                        <p>Je l'utilise depuis très longtemps autant pour du photo-montage que pour de la création graphique comme des logos, bannières ou de simples dessins</p>
+                                        <div class="skill">
+                                            <div class="skill_level"></div>
+                                        </div>
+                                    </a>
+                                    <a href="https://git-scm.com/" class="box" target="_blank">
+                                        <img alt="#" src="public/img/comp-git.jpg">
+                                        <h2>Git</h2>
+                                        <p>Mon outil principal qui me permet de faciliter le travail à plusieurs sur un même projet</p>
+                                        <div class="skill">
+                                            <div class="skill_level"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="experiences" id="experiences">
+                                <div class="exp_container">
                                     <div class="titre">
-                                        <h3>
-                                            
-                                            Besoin d'un Site Web ?
-                                            
-                                        </h3>
+                                       <h1>Expériences</h1>
                                     </div>
-                                    <div class="footer">
-                                        <a href="#" class="button"> <span>Je veux !</span></a>
-            
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cont_elem">
-                                <div class="card">
-                                    <div class="imbox" data-text="Un Design">
-                                        <img src="public/img/plan.png">
-                                    </div>
-    
-                                    <div class="content">
-                                        <div>
-                                            <h3>Un Design</h3>
-                                            <p>Réfléchissons à un design qui vous représente et qui vous est propre !</p>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <div class="card">
-                                    <div class="imbox" data-text="Du Code">
-                                        <img src="public/img/data.png">
-                                    </div>
-    
-                                    <div class="content">
-                                        <div>
-                                            <h3>Du Code</h3>
-                                            <p>Un code simple, ergonomique et facile à reprendre par la suite.</p>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <div class="card">
-                                    <div class="imbox" data-text="Un Site Web">
-                                        <img src="public/img/graphic.png">
-                                    </div>
-    
-                                    <div class="content">
-                                        <div>
-                                            <h3>Un Site Web</h3>
-                                            <p>Votre Site est fin prêt et il ne vous reste plus qu'à admirez le travail !</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
 
-
-                        <div class="infend_cont">
-                            <div class="head">
-                                <div class="cont-titre">
-                                    <div class="titre">                                    
-                                        <h3>Besoin d'un Logo ?</h3>
-                                    </div>
-                                    <div class="footer">
-                                        <a href="#" class="button"> <span>Pourquoi pas !</span></a>
+                                    <div class="exp_content">
+                                        <button class="box" onclick="text1()">
+                                            <h1>Test</h1>
+                                        </button>
+                                        <button class="box" onclick="text2()">
+                                            <img src="public/img/comp-ai.jpg">
+                                        </button>
+                                        <button class="box" onclick="text3()">
             
+                                        </button>
+                                    </div>
+
+                                    <div  class="description">
+                                        <div class="Nom" id="nom">
+                                            <h1>Aucune Experience sélectionnée</h1>
+                                        </div>
+                                        <div class="descri" id="descri">
+
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
-                            <div class="cont_elem">
-                                <div class="card">
-                                    <div class="imbox" data-text="Une Idée">
-                                        <img src="public/img/idea.png">
-                                    </div>
-    
-                                    <div class="content">
-                                        <div>
-                                            <h3>Une Idée</h3>
-                                            <p>Parce qu'un logo part toujours d'une ou plusieurs idées !</p>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <div class="card">
-                                    <div class="imbox" data-text="Un Croquis">
-                                        <img src="public/img/drawing.png">
-                                    </div>
-    
-                                    <div class="content">
-                                        <div>
-                                            <h3>Un Croquis</h3>
-                                            <p>Un petit gribouillit ou trois traits fait à la va vite peuvent donner un exemple.</p>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <div class="card">
-                                    <div class="imbox" data-text="Un Logo">
-                                        <img src="public/img/drawlogo.png">
-                                    </div>
-    
-                                    <div class="content">
-                                        <div>
-                                            <h3>Un Logo</h3>
-                                            <p>Un dessin travaillé qui pourra désormais vous représenter !</p>
-                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
+        
                         </div>
                     </div>
+                </section>
 
-
-                    <div class="msg-col" id="gtitre3">
-                        <div class="fond-titre" id="fond-titre">
-                            <h1>Contacter</h1>
-                        </div>
-                        <section class="contacter" id="contacter">
-                            <div class="ccontainer">
-                                <div class="contact_info">
-                                    <div class="content">
-                                        <h2>Me Contacter</h2>
-                                    </div>
-                                    <div class="box">
-                                        <div class="text">
-                                            <h3>Informations :</h3>
-                                            <p>Je suis actuellement à la recherche d'une entreprise pour de l'alternance dans le développement Web et Web Mobile pour une durée de 5 mois.</p>
-                                            
-                                        </div>
-                                    </div>
-                                    <div class="box">
-                                        <div class="text">
-                                            <h3>Création de Site :</h3>
-                                            <p>Veillez à bien expliquer votre demande et détailler au mieux le type de design souhaité.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="contactForm" id="mail">
-                                    <form id="contact-form" action="/index.html">
-                                        <h2>Envoyer un Message</h2>
-                                        <div class="inputBox">
-                                            <input type="hidden" name="contact_number">
-                                        </div>
-                                        <div class="inputBox">
-                                            <input type="text" name="user_name" required="required">
-                                            <span>Nom Prénom / Société</span>
-                                        </div>
-                                        <div class="inputBox">
-                                            <input type="email" name="user_email" required="required">
-                                            <span>Email</span>
-                                        </div>
-                                        <div class="inputBox">
-                                            <textarea name="message" required="required"></textarea>
-                                            <span>Votre Message</span>
-                                        </div>
-                                        <div class="inputBox">
-                                            <input type="submit" value="Envoyer">
-                                        </div>
-                                    </form>
-                                </div>
-                                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
-                                <script type="text/javascript">
-                                    (function(){
-                                    emailjs.init('user_t1L8BKwOoAo5OmWQiq57d');
-                                    })();
-                                </script>
-                                
+                <section class="contacter" id="contacter">
+                    <div class="container">
+                        <div class="contact_info">
+                            <div class="content">
+                                <h2>Me Contacter</h2>
                             </div>
-                        </section>
+                            <div class="box">
+                                <div class="text">
+                                    <h3>Informations :</h3>
+                                    <p>Je suis actuellement à la recherche d'une entreprise pour de l'alternance dans le développement Web et Web Mobile pour une durée de 5 mois.</p>
+                                    
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="text">
+                                    <h3>Création de Site :</h3>
+                                    <p>Veillez à bien expliquer votre demande et détailler au mieux le type de design souhaité.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contactForm">
+                            <form id="contact-form" action="/index.html">
+                                <h2>Envoyer un Message</h2>
+                                <div class="inputBox">
+                                    <input type="hidden" name="contact_number">
+                                </div>
+                                <div class="inputBox">
+                                    <input type="text" name="user_name" required="required">
+                                    <span>Nom Prénom / Société</span>
+                                </div>
+                                <div class="inputBox">
+                                    <input type="email" name="user_email" required="required">
+                                    <span>Email</span>
+                                </div>
+                                <div class="inputBox">
+                                    <textarea name="message" required="required"></textarea>
+                                    <span>Votre Message</span>
+                                </div>
+                                <div class="inputBox">
+                                    <input type="submit" value="Envoyer">
+                                </div>
+                            </form>
+                        </div>
+                        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+                        <script type="text/javascript">
+                            (function(){
+                            emailjs.init('user_t1L8BKwOoAo5OmWQiq57d');
+                            })();
+                        </script>
+                        
                     </div>
 
-                </div>
-            </div>
+                </section>
 
-            <div class="controller">
-                <div id="line1"></div>
-                <div id="line2"></div>
-                <div id="line3"></div>
-                <div id="line4"></div>
-                <div id="active"></div>
-            </div>
-    </div>
-
+<footer>
+    <br>
+  
+  <center><a href="/index.html" title="Site V2" class>Site version 2</a>
+    <h4>@Site créé par SP4RT4</h4></center>
+</footer>
 </body>
 </html>
