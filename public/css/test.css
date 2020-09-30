@@ -316,10 +316,14 @@
 .msg-col .textDiv .smtt{
     display: flex;
     align-items: center;
+    position: relative;
+    width: 100%;
 }
 
 /* Contenu div 1 : Boutons choix d'informations à propos */
 .msg-col .bchoix {
+    position: absolute;
+    right: 5%;
     display: flex;
     z-index: 10;
 }
@@ -329,6 +333,10 @@
     vertical-align: middle;
     align-items: center;
     margin-right: 15px;
+}.msg-col .bchoix label.boutons:hover h2.bc1, .msg-col .bchoix label.boutons:hover h2.bc2{
+    background: #D8B7A4;
+    box-shadow: inset -1px -1px 5px  #333,
+                inset 1px 1px 5px  #333;
 }
 
 .msg-col .bchoix label.boutons input{
@@ -493,35 +501,35 @@
     width: 100%;
 }
 
-.infsup_cont{
+.info_site_cont{
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
 }
 
-.infsup_cont .head {
+.info_site_cont .head {
     position: relative;
     height: 50px;
     margin-bottom: 15px;
 }
 
-.infsup_cont .head .cont-titre{
+.info_site_cont .head .cont-titre{
     display: flex;
     align-items: center;
 }
 
-.infsup_cont .head .titre {
+.info_site_cont .head .titre {
     position: relative;
 }
 
-.infsup_cont .head .titre h3{
+.info_site_cont .head .titre h3{
     font-weight: 500;
     font-size: 30px;
     color: #dd9f7e;
     margin: 0;
 }
 
-.infsup_cont .head .titre h3:before{
+.info_site_cont .head .titre h3:before{
     content: "";
     position: absolute;
     width: 300px;
@@ -532,7 +540,7 @@
     border-radius: 100px;
 }
 
-.infsup_cont .head .titre h3:after{
+.info_site_cont .head .titre h3:after{
     content: "";
     position: absolute;
     width: 15%;
@@ -545,14 +553,14 @@
 
 
 
-.infsup_cont .cont_elem {
+.info_site_cont .cont_elem {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 32px;
     gap: 32px;
 }
 
-.infsup_cont .card{
+.info_site_cont .card{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -565,7 +573,7 @@
     padding: 10px 10px 10px 10px
 }
 
-.infsup_cont .card .imbox{
+.info_site_cont .card .imbox{
     position: absolute;
     top: 0;
     left: 0;
@@ -581,7 +589,7 @@
     transition: 0.5s ease-in-out;
 }
 
-.infsup_cont .card:hover .imbox{
+.info_site_cont .card:hover .imbox{
     width: 150px;
     height: 150px;
     left: -75px;
@@ -592,7 +600,7 @@
     border-radius: 100px;
 }
 
-.infsup_cont .card .imbox:before{
+.info_site_cont .card .imbox:before{
     content:  attr(data-text);
     position: absolute;
     bottom: 0;
@@ -610,16 +618,16 @@
 
 }
 
-.infsup_cont .card .imbox img {
+.info_site_cont .card .imbox img {
     max-width: 100px;
     transition: 0.5s ease-in-out;
 }
 
-.infsup_cont .card:hover .imbox img {
+.info_site_cont .card:hover .imbox img {
     max-width: 75x;
 }
 
-.infsup_cont .card .content{
+.info_site_cont .card .content{
     position: absolute;
     right: 0;
     width: calc(100% - 75px);
@@ -631,19 +639,19 @@
 
 }
 
-.infsup_cont .card .content div{
+.info_site_cont .card .content div{
     padding-left: 20px;
 }
-.infsup_cont .card .content h3{
+.info_site_cont .card .content h3{
     margin-bottom: 5px;
     font-size: 24px;
 }
 
-.infsup_cont .card .content p{
+.info_site_cont .card .content p{
     color: black;
 }
 
-.infsup_cont .card .content a{
+.info_site_cont .card .content a{
     display: inline-block;
     margin-top: 10px;
     padding: 5px 10px;
@@ -654,14 +662,14 @@
 
 /* footer */
 
-.infsup_cont .footer {
+.info_site_cont .footer {
     height: 50px;
     padding-bottom: 24px;
     margin-left: 51%;
     margin-right: 5%;
 }
 
-.infsup_cont .button {
+.info_site_cont .button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -678,7 +686,7 @@
     transition: .3s ease-in-out;
 }
 
-.infsup_cont .button span{
+.info_site_cont .button span{
     color: rgb(245, 241, 241);
     font-weight: bolder;
     letter-spacing: 1px;
@@ -686,13 +694,13 @@
     transition: .3s ease-in-out;
 }
 
-.infsup_cont .button:hover{
+.info_site_cont .button:hover{
     transition: .3s ease-in-out;
     background: rgb(48, 201, 99);
     box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.596);
 }
 
-.infsup_cont .button:hover span{
+.info_site_cont .button:hover span{
     color: rgb(37, 35, 35);
     transition: .3s ease-in-out;
 }
@@ -702,29 +710,29 @@
 
 /* PRESTATION LOGO */
 
-.infend_cont{
+.info_logo_cont{
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
 }
 
-.infend_cont .head {
+.info_logo_cont .head {
     position: relative;
     height: 50px;
     margin-bottom: 15px;
 }
 
-.infend_cont .head .cont-titre{
+.info_logo_cont .head .cont-titre{
     position: relative;
     display: flex;
     align-items: center;
 }
 
-.infend_cont .head .titre {
+.info_logo_cont .head .titre {
     position: relative;
 }
 
-.infend_cont .head .titre h3{
+.info_logo_cont .head .titre h3{
     font-weight: 500;
     font-size: 30px;
     color: #dd9f7e;
@@ -732,7 +740,7 @@
 }
 
 
-.infend_cont .head .titre h3:before{
+.info_logo_cont .head .titre h3:before{
     content: "";
     position: absolute;
     width: 250px;
@@ -743,7 +751,7 @@
     border-radius: 100px;
 }
 
-.infend_cont .head .titre h3:after{
+.info_logo_cont .head .titre h3:after{
     content: "";
     position: absolute;
     width: 15%;
@@ -756,14 +764,14 @@
 
 /* Cartes */
 
-.infend_cont .cont_elem {
+.info_logo_cont .cont_elem {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 32px;
     gap: 32px;
 }
 
-.infend_cont .card{
+.info_logo_cont .card{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -777,7 +785,7 @@
     padding: 10px 10px 10px 10px
 }
 
-.infend_cont .card .imbox{
+.info_logo_cont .card .imbox{
     position: absolute;
     top: 0;
     left: 0;
@@ -793,7 +801,7 @@
     transition: 0.5s ease-in-out;
 }
 
-.infend_cont .card:hover .imbox{
+.info_logo_cont .card:hover .imbox{
     width: 150px;
     height: 150px;
     left: -75px;
@@ -804,7 +812,7 @@
     border-radius: 100px;
 }
 
-.infend_cont .card .imbox:before{
+.info_logo_cont .card .imbox:before{
     content:  attr(data-text);
     position: absolute;
     bottom: 0;
@@ -822,16 +830,16 @@
 
 }
 
-.infend_cont .card .imbox img {
+.info_logo_cont .card .imbox img {
     max-width: 100px;
     transition: 0.5s ease-in-out;
 }
 
-.infend_cont .card:hover .imbox img {
+.info_logo_cont .card:hover .imbox img {
     max-width: 75x;
 }
 
-.infend_cont .card .content{
+.info_logo_cont .card .content{
     position: absolute;
     right: 0;
     width: calc(100% - 75px);
@@ -843,20 +851,20 @@
 
 }
 
-.infend_cont .card .content div{
+.info_logo_cont .card .content div{
     padding-left: 20px;
 }
 
-.infend_cont .card .content h3{
+.info_logo_cont .card .content h3{
     margin-bottom: 5px;
     font-size: 24px;
 }
 
-.infend_cont .card .content p{
+.info_logo_cont .card .content p{
     color: black;
 }
 
-.infend_cont .card .content a{
+.info_logo_cont .card .content a{
     display: inline-block;
     margin-top: 10px;
     padding: 5px 10px;
@@ -867,14 +875,14 @@
 
 /* footer */
 
-.infend_cont .footer {
+.info_logo_cont .footer {
     height: 50px;
     padding-bottom: 24px;
     margin-left: 55%;
     margin-right: 5%;
 }
 
-.infend_cont .button {
+.info_logo_cont .button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -891,7 +899,7 @@
     transition: .3s ease-in-out;
 }
 
-.infend_cont .button span{
+.info_logo_cont .button span{
     color: rgb(245, 241, 241);
     font-weight: bolder;
     letter-spacing: 1px;
@@ -899,13 +907,13 @@
     transition: .3s ease-in-out;
 }
 
-.infend_cont .button:hover{
+.info_logo_cont .button:hover{
     transition: .3s ease-in-out;
     background: rgb(48, 201, 99);
     box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.596);
 }
 
-.infend_cont .button:hover span{
+.info_logo_cont .button:hover span{
     color: rgb(37, 36, 35);
     transition: .3s ease-in-out;
 }
@@ -1113,20 +1121,20 @@
         grid-template-columns: 1fr 1fr;
         gap: 0 20px;
     }
-    .infsup_cont .cont_elem{
+    .info_site_cont .cont_elem{
         gap: 10px;
     }
 
-    .infsup_cont .head .titre h3{
+    .info_site_cont .head .titre h3{
         width: 320px;
     }
-    .infsup_cont .footer{
+    .info_site_cont .footer{
         margin-left: 20px;
-    }.infsup_cont .button{
+    }.info_site_cont .button{
         width: 100px;
 
     }
-    .infsup_cont .card:hover .imbox{
+    .info_site_cont .card:hover .imbox{
         width: 0;
         height: 0;
         top: 50%;
@@ -1134,46 +1142,46 @@
     }
 
 
-    .infsup_cont .card .content{
+    .info_site_cont .card .content{
         position: relative;
         width: 100%;
-    }.infsup_cont .card .content h3{
+    }.info_site_cont .card .content h3{
         font-size: 20px;
-    }.infsup_cont .card .content p{
+    }.info_site_cont .card .content p{
         font-size: 14px;
     }
 
-    .infend_cont .cont_elem{
+    .info_logo_cont .cont_elem{
         gap: 10px;
     }
 
-    .infend_cont .head .titre h3{
+    .info_logo_cont .head .titre h3{
         width: 320px;
     }
-    .infend_cont .footer{
+    .info_logo_cont .footer{
         margin-left: 20px;
-    }.infend_cont .button{
+    }.info_logo_cont .button{
         width: 130px;
         padding: 0 15px;
 
-    }.infend_cont .button span{
+    }.info_logo_cont .button span{
         font-size: 16px;
     }
 
 
-    .infend_cont .card:hover .imbox{
+    .info_logo_cont .card:hover .imbox{
         width: 0;
         height: 0;
         top: 50%;
         left: 50%;
         }
     
-        .infend_cont .card .content{
+        .info_logo_cont .card .content{
             position: relative;
             width: 100%;
-        }.infend_cont .card .content h3{
+        }.info_logo_cont .card .content h3{
             font-size: 20px;
-        }.infend_cont .card .content p{
+        }.info_logo_cont .card .content p{
             font-size: 14px;
         }
     
