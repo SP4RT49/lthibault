@@ -1,7 +1,3 @@
-Vue.component("modal", {
-  template: "#PortfolioV2",
-});
-
 const PortfolioV2 = {
   template: "#PortfolioV2",
   name: "PortfolioV2",
