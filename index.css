@@ -99,7 +99,7 @@
   box-shadow: inset 0 250px rgba(0, 0, 0, 0.623),
     inset 10px 0px 10px -10px rgb(141, 70, 37),
     inset -10px 0px 10px -10px rgb(141, 70, 37);
-  background-image: url("/public/img/pv2.png");
+  background-image: url("./public/img/pv2.png");
   background-size: cover;
   background-position: center;
   transition: 0.3s;
@@ -110,7 +110,7 @@
   box-shadow: inset 0 250px rgba(0, 0, 0, 0.623),
     inset 10px 0px 10px -10px rgb(141, 70, 37),
     inset -10px 0px 10px -10px rgb(141, 70, 37);
-  background-image: url("/public/img/pv.png");
+  background-image: url("./public/img/pv.png");
   background-size: cover;
   background-position: center;
   transition: 0.3s;
@@ -121,7 +121,7 @@
   box-shadow: inset 0 250px rgba(0, 0, 0, 0.623),
     inset 10px 0px 10px -10px rgb(141, 70, 37),
     inset -10px 0px 10px -10px rgb(141, 70, 37);
-  background-image: url("/public/img/rpg.png");
+  background-image: url("./public/img/rpg.png");
   background-size: cover;
   background-position: center;
   transition: 0.3s;
