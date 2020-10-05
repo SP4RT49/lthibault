@@ -181,12 +181,13 @@
   border: none;
   border-bottom: 1px solid rgb(110, 110, 105);
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .pv2-container .pv2-content .image {
   width: 250px;
   height: 250px;
-  background-image: url("/public/img/pv2.png");
+  background-image: url("./public/img/pv2.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -194,7 +195,7 @@
 .pv-container .pv-content .image {
   width: 250px;
   height: 250px;
-  background-image: url("/public/img/pv.png");
+  background-image: url("./public/img/pv.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -202,7 +203,7 @@
 .rpg-container .rpg-content .image {
   width: 250px;
   height: 250px;
-  background-image: url("/public/img/rpg.png");
+  background-image: url("./public/img/rpg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
