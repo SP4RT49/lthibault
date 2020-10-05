@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <title>Hub</title>
+  </head>
+  <body>
+    <div id="hub">
+      <!-- Titre du Hub -->
+      <div class="hub-titre">
+        <h1>HUB</h1>
+        <h3>
+          Sélectionnez ci-dessous un page pour en obtenir ses informations
+        </h3>
+      </div>
+      <!-- les sites disponibles -->
+      <div class="hub-sites">
+        <div class="hub-sites-container">
+          <router-link to="/portfolio-v2">
+            <div class="hub-boutons">
+              <div class="hub-bouton-pv2"></div>
+            </div>
+          </router-link>
+
+          <router-link to="/portfolio">
+            <div class="hub-boutons">
+              <div class="hub-bouton-pv"></div>
+            </div>
+          </router-link>
+
+          <router-link to="/rpg">
+            <div class="hub-boutons">
+              <div class="hub-bouton-rpg"></div>
+            </div>
+          </router-link>
+        </div>
+      </div>
+
+      <router-view></router-view>
+
+      <script type="text/x-template" id="PortfolioV2">
+          <div class="cont">
+            <transition name="fade" appear>
+            <div class="pv2-container" v-if="seen">
+                <div class="pv2-content">
+                  <button @click="seen = false" class="pv2-hide">X</button>
+                    <div class="image"></div>
+                    <div class="informations">
+                        <h1>PortfolioV2</h1>
+                        <p>Une petite refonte de mon Portfolio peut-être plus agréable dans sa navigation.
+                          <br>Style assez sombre mais avec une possibilité de pouvoir changer avec un style plus clair via un bouton accessible en haut à droite de la barre de navigation.</p>
+                    </div>
+                    <div class="lien">
+                      <a href="/html/Portfolio/portfolio-v2.html">Y Allez</a>
+                    </div>
+                </div>
+            </div>
+
+          </transition>
+          <button class="pv2-btn" @click="seen = true">Voir PortfolioV2</button>
+
+        </div>
+      </script>
+
+      <script type="text/x-template" id="Portfolio">
+          <div class="cont">
+            <transition name="fade" appear>
+            <div class="pv-container" v-if="seen">
+                <div class="pv-content">
+                  <button @click="seen = false" class="pv-hide">X</button>
+                    <div class="image"></div>
+                    <div class="informations">
+                        <h1>Portfolio</h1>
+                        <p>Première version de mon Portfolio, avec divers informations me décrivant personnellement.</p>
+                    </div>
+                    <div class="lien">
+                      <a href="/html/Portfolio/portfolio.html">Y Allez</a>
+                    </div>
+                </div>
+            </div>
+
+          </transition>
+          <button class="pv2-btn" @click="seen = true">Voir Portfolio</button>
+
+        </div>
+      </script>
+
+      <script type="text/x-template" id="Rpg">
+          <div class="cont">
+            <transition name="fade" appear>
+            <div class="rpg-container" v-if="seen">
+                <div class="rpg-content">
+                  <button @click="seen = false" class="rpg-hide">X</button>
+                    <div class="image"></div>
+                    <div class="informations">
+                        <h1>Rpg</h1>
+                        <p>Je m'essais à divers tests en Vue.js et pour m'y familiariser assez vite j'ai décider de l'utiliser dans un thème qui m'est assez familier.
+                          <br>Quoi de mieux que de travailler dans un thème que l'on apprécie particulièrement.</p>
+                    </div>
+                    <div class="lien">
+                      <a href="/html/tests/main.html">Y Allez</a>
+                    </div>
+                </div>
+            </div>
+
+          </transition>
+          <button class="pv2-btn" @click="seen = true">Voir Rpg</button>
+
+        </div>
+      </script>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script src="/public/js/vue.js"></script>
+  </body>
+</html>

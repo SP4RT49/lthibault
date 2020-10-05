@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#app .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(49, 48, 48);
+    z-index: 10;
+}
+
+#app .content .titre h1{
+    font-size: 50px;
+    color: rgb(26, 25, 25);
+}
+
+#app .content .description{
+    margin-bottom: 15px;
+}
+#app .content .description p{
+    font-size: 25px;
+    color: rgb(26, 25, 25);
+}
+
+#app .content .interraction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#app .content .interraction input{
+    animation: pseudo 2s infinite;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+#app .content .interraction input[type="text"]{
+    min-width: 150px;
+    padding: 0 10px;
+    color: grey;
+    background: rgba(109, 106, 105, 0.082);
+    border: none;
+    border-bottom: 1px solid rgb(77, 75, 75);
+    border-radius: 20px;
+    transition: background .5s;
+}
+ @keyframes pseudo{
+
+    0% {
+        box-shadow: 0 0 0 0 rgba(102, 86, 79, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 5px rgba(255, 82, 82, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+    }
+ }
+
+
+ .bounce-enter-active {
+    animation: bounce-in .5s;
+  }
+  .bounce-leave-active {
+    animation: bounce-in .5s reverse;
+  }
+  @keyframes bounce-in {
+      
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+
+#app .content .interraction input[type="text"]:focus,
+#app .content .interraction input[type="text"]:active{
+    background: rgba(109, 106, 105, 0.315);
+}
+
+#app .content .interraction button{
+    margin-top: 8px;
+    width: 100px;
+    padding: 4px 10px;
+    border-radius: 10px;
+    background: rgba(128, 128, 128, 0.301);
+}
+
+
+
+#app .content .Pseudo{
+    min-width: 240px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: rgb(49, 48, 48);
+    box-shadow: inset 1px 1px 2px rgb(68, 67, 67),
+                inset -1px -1px 2px rgb(68, 67, 67);
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+#app .content .Pseudo p{
+    font-size: 25px;
+    color: rgb(26, 25, 25);
+}
+#app .content .Pseudo p span.pseudo{
+    color: rgb(143, 28, 28);
+}
+
+
+#app .main-content{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: #333;
+}
+
+#app .main-content .mh{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    margin-top: 250px;
+}
+
+#app .main-content .mb{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#app .main-content .mb p{
+    text-align: center;
+    font-size: 28px;
+    color: grey;
+}
+
+
+
+
+#app-2{
+    display: flex;
+    height: 100vh;
+    background: tomato;
+}
+#app-2 span{
+    width: 650px;
+    height: 0;
+    color: whitesmoke;
+}
+

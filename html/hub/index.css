@@ -1,0 +1,268 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#hub {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  box-shadow: inset 0 100vh rgba(0, 0, 0, 0.432),
+    inset 3px 1px 10px rgba(0, 0, 0, 0.808),
+    inset -3px -1px 10px rgba(0, 0, 0, 0.808);
+  background-image: url("https://images.unsplash.com/photo-1509023464722-18d996393ca8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Titre du Hub */
+
+#hub .hub-titre {
+  display: flex;
+  position: relative;
+  margin-top: 20%;
+  width: 50%;
+  margin-bottom: 15px;
+  flex-direction: column;
+  align-items: center;
+}
+
+#hub .hub-titre h1 {
+  animation: scolor 10s infinite;
+  font-size: 50px;
+  letter-spacing: 5px;
+  margin: 5px 0;
+  color: #1317186b;
+  text-shadow: 1px 1px 3px currentColor, -1px 1px 3px currentColor;
+}
+
+@keyframes scolor {
+  0% {
+    color: #68645f00;
+  }
+
+  50% {
+    color: #13181a;
+  }
+
+  100% {
+    color: #68645f00;
+  }
+}
+
+#hub .hub-titre h3 {
+  color: rgba(167, 167, 167, 0.534);
+}
+
+/* Les sites disponibles */
+
+#hub .hub-sites {
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#hub .hub-sites .hub-sites-container {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
+#hub .hub-sites .hub-sites-container .hub-boutons {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+#hub .hub-sites .hub-sites-container .hub-boutons:hover {
+  box-shadow: 10px 0px 10px -10px rgb(141, 70, 37),
+    -10px 0px 10px -10px rgb(141, 70, 37);
+  border-radius: 20px;
+}
+
+#hub .hub-sites .hub-sites-container .hub-boutons .hub-bouton-pv2 {
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 250px rgba(0, 0, 0, 0.623),
+    inset 10px 0px 10px -10px rgb(141, 70, 37),
+    inset -10px 0px 10px -10px rgb(141, 70, 37);
+  background-image: url("/public/img/pv2.png");
+  background-size: cover;
+  background-position: center;
+  transition: 0.3s;
+}
+#hub .hub-sites .hub-sites-container .hub-boutons .hub-bouton-pv {
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 250px rgba(0, 0, 0, 0.623),
+    inset 10px 0px 10px -10px rgb(141, 70, 37),
+    inset -10px 0px 10px -10px rgb(141, 70, 37);
+  background-image: url("/public/img/pv.png");
+  background-size: cover;
+  background-position: center;
+  transition: 0.3s;
+}
+#hub .hub-sites .hub-sites-container .hub-boutons .hub-bouton-rpg {
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 250px rgba(0, 0, 0, 0.623),
+    inset 10px 0px 10px -10px rgb(141, 70, 37),
+    inset -10px 0px 10px -10px rgb(141, 70, 37);
+  background-image: url("/public/img/rpg.png");
+  background-size: cover;
+  background-position: center;
+  transition: 0.3s;
+}
+
+#hub .hub-sites .hub-sites-container .hub-boutons .hub-bouton-pv2:hover,
+#hub .hub-sites .hub-sites-container .hub-boutons .hub-bouton-pv:hover,
+#hub .hub-sites .hub-sites-container .hub-boutons .hub-bouton-rpg:hover {
+  box-shadow: inset 0 250px rgba(0, 0, 0, 0.151);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Portfolio V2 */
+
+.pv2-container,
+.pv-container,
+.rpg-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.pv2-container .pv2-content,
+.pv-container .pv-content,
+.rpg-container .rpg-content {
+  display: grid;
+  grid-template-columns: 250px auto;
+  gap: 15px;
+  position: relative;
+  width: 50%;
+  min-width: 700px;
+  height: auto;
+  padding: 15px 15px;
+  background: #2d3436;
+  border: inset 2px rgba(201, 195, 195, 0.39);
+  border-radius: 10px;
+}
+.pv2-container .pv2-content button.pv2-hide,
+.pv-container .pv-content button.pv-hide,
+.rpg-container .rpg-content button.rpg-hide {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  appearance: none;
+  -webkit-appearance: none;
+  background: rgba(255, 0, 0, 0.199);
+  border: none;
+  border-bottom: 1px solid rgb(110, 110, 105);
+  border-radius: 5px;
+}
+
+.pv2-container .pv2-content .image {
+  width: 250px;
+  height: 250px;
+  background-image: url("/public/img/pv2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.pv-container .pv-content .image {
+  width: 250px;
+  height: 250px;
+  background-image: url("/public/img/pv.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.rpg-container .rpg-content .image {
+  width: 250px;
+  height: 250px;
+  background-image: url("/public/img/rpg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pv2-container .pv2-content .informations h1,
+.pv-container .pv-content .informations h1,
+.rpg-container .rpg-content .informations h1 {
+  margin-bottom: 10px;
+  color: rgba(245, 245, 245, 0.616);
+}
+.pv2-container .pv2-content .informations p,
+.pv-container .pv-content .informations p,
+.rpg-container .rpg-content .informations p {
+  color: rgba(179, 161, 161, 0.664);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 25px;
+}
+.pv2-container .pv2-content a,
+.pv-container .pv-content a,
+.rpg-container .rpg-content a {
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  width: 100px;
+  height: 20px;
+  right: 20px;
+  bottom: 10px;
+  border-radius: 20px;
+  background: rgba(0, 156, 52, 0.322);
+  color: rgba(207, 207, 207, 0.671);
+}
+
+.cont .pv2-btn,
+.cont .pv-btn,
+.cont .rpg-btn {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 200px;
+  height: 25px;
+  margin-top: 15px;
+  font-size: 18px;
+  color: rgba(197, 180, 180, 0.582);
+  background: rgba(51, 51, 51, 0.527);
+  border: none;
+  border-radius: 20px;
+  border-bottom: 1px solid rgb(68, 62, 62);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.cont .pv2-btn:hover,
+.cont .pv-btn:hover,
+.cont .rpg-btn:hover {
+  background: rgba(75, 75, 75, 0.527);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}

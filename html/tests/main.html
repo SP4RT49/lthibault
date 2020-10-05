@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="/html/tests/main.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <transition name="bounce">
+        <div class="content" v-if="seen">
+          <div class="titre">
+            <h1>Connexion</h1>
+          </div>
+          <div class="description">
+            <p>Veuillez inscrire votre pseudonyme</p>
+          </div>
+          <div class="Pseudo">
+            <p>Pseudo : <span class="pseudo">{{ pseudo }}</span></p>
+          </div>
+          <div class="interraction">
+            <input
+              type="text"
+              v-model="pseudo"
+              placeholder="Entrez votre pseudo"
+            />
+            <button v-on:click="seen = !seen">Valider</button>
+          </div>
+        </div>
+      </transition>
+
+      <div class="main-content">
+        <div class="mh">
+          <h1>Bienvenue {{ pseudo }} !</h1>
+        </div>
+        <div class="mb">
+          <p>
+            Le Site en Construction !<br />
+            Repasses plus tard pour voir l'avancée !
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    var app = new Vue({
+      el: "#app",
+      data: {
+        pseudo: "",
+        seen: true,
+      },
+    });
+  </script>
+</html>
